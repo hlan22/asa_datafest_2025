@@ -191,7 +191,7 @@ seasonal_occupancy
 # save plot
 ggsave(filename = "outputs/seasonal_occupancy.png",
        plot = seasonal_occupancy,
-       width = 7,
+       width = 10,
        height = 6)
 
 
@@ -219,7 +219,7 @@ deseasonalized_occupancy
 # save plot
 ggsave(filename = "outputs/deseasonalized_occupancy.png",
        plot = deseasonalized_occupancy,
-       width = 7,
+       width = 10,
        height = 6)
 
 
