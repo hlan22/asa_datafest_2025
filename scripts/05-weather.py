@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Step 1: Read the Excel file with multiple sheets
-excel_file = pd.ExcelFile('./additional_data/raw_extreme_weather.xlsx')
+excel_file = pd.ExcelFile('./additional_data/raw/raw_extreme_weather.xlsx')
 
 # Step 2: Initialize a list to store quarterly counts for each city
 quarterly_counts = []
@@ -22,12 +22,13 @@ for city in excel_file.sheet_names:
     quarterly = df.groupby(['Year', 'Quarter'])[3].nunique().reset_index()
     quarterly = quarterly.rename(columns={3: 'Count of Extreme Weather Event'})
     
-    # Step 7: Generate all possible year-quarter combinations for this city
-    # Get the range of years in the data for this city
+    # Step 7: Generate all possible year-quarter combinations for this city up to 2024
+    # Get the minimum year in the data for this city
     min_year = df['Year'].min()
-    max_year = df['Year'].max()
+    # Set the maximum year to 2024
+    max_year = 2024
     
-    # Create a DataFrame with all possible year-quarter combinations
+    # Create a DataFrame with all possible year-quarter combinations from min_year to 2024
     all_combinations = pd.DataFrame(
         [(year, quarter) for year in range(min_year, max_year + 1) for quarter in range(1, 5)],
         columns=['Year', 'Quarter']
@@ -48,8 +49,8 @@ for city in excel_file.sheet_names:
 quarterly_summary = pd.concat(quarterly_counts, ignore_index=True)
 
 # Step 11: Create a new Excel file with the summary
-with pd.ExcelWriter('./additional_data/weather_summary.xlsx', engine='xlsxwriter') as writer:
+with pd.ExcelWriter('./additional_data/raw/extreme_weather.xlsx', engine='xlsxwriter') as writer:
     # Write quarterly summary to a sheet
     quarterly_summary.to_excel(writer, sheet_name='Quarterly Summary', index=False)
 
-print("Quarterly Summary has been written to './additional_data/extreme_weather.xlsx'.")
+print("Quarterly Summary has been created.")

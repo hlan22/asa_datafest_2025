@@ -31,6 +31,14 @@ Chicago,Q1,2022,13
 Chicago,Q2,2022,7
 Chicago,Q3,2022,13
 Chicago,Q4,2022,2
+Chicago,Q1,2023,0
+Chicago,Q2,2023,0
+Chicago,Q3,2023,0
+Chicago,Q4,2023,0
+Chicago,Q1,2024,0
+Chicago,Q2,2024,0
+Chicago,Q3,2024,0
+Chicago,Q4,2024,0
 Manhattan,Q1,2020,0
 Manhattan,Q2,2020,2
 Manhattan,Q3,2020,2
@@ -171,23 +179,23 @@ San Francisco,Q1,2024,8
 San Francisco,Q2,2024,1
 San Francisco,Q3,2024,2
 San Francisco,Q4,2024,2
-South Bay/San Jose,Q1,2020,3
-South Bay/San Jose,Q2,2020,5
-South Bay/San Jose,Q3,2020,11
-South Bay/San Jose,Q4,2020,8
-South Bay/San Jose,Q1,2021,12
-South Bay/San Jose,Q2,2021,4
-South Bay/San Jose,Q3,2021,1
-South Bay/San Jose,Q4,2021,1
-South Bay/San Jose,Q1,2022,1
-South Bay/San Jose,Q2,2022,3
-South Bay/San Jose,Q3,2022,5
-South Bay/San Jose,Q4,2022,5
-South Bay/San Jose,Q1,2023,11
-South Bay/San Jose,Q2,2023,0
-South Bay/San Jose,Q3,2023,0
-South Bay/San Jose,Q4,2023,0
-South Bay/San Jose,Q1,2024,8
-South Bay/San Jose,Q2,2024,1
-South Bay/San Jose,Q3,2024,2
-South Bay/San Jose,Q4,2024,2
+South BaySan Jose,Q1,2020,3
+South BaySan Jose,Q2,2020,5
+South BaySan Jose,Q3,2020,11
+South BaySan Jose,Q4,2020,8
+South BaySan Jose,Q1,2021,12
+South BaySan Jose,Q2,2021,4
+South BaySan Jose,Q3,2021,1
+South BaySan Jose,Q4,2021,1
+South BaySan Jose,Q1,2022,1
+South BaySan Jose,Q2,2022,3
+South BaySan Jose,Q3,2022,5
+South BaySan Jose,Q4,2022,5
+South BaySan Jose,Q1,2023,11
+South BaySan Jose,Q2,2023,0
+South BaySan Jose,Q3,2023,0
+South BaySan Jose,Q4,2023,0
+South BaySan Jose,Q1,2024,8
+South BaySan Jose,Q2,2024,1
+South BaySan Jose,Q3,2024,2
+South BaySan Jose,Q4,2024,2
