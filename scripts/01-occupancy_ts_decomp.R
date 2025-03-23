@@ -1,12 +1,12 @@
-# clean data in this script
+# separate time series components of occupancy data
 library(ggplot2)
 library(tidyverse)
 library(forecast)
 library(broom)
-setwd("C://Users/thetr//OneDrive//Desktop//datafest//2025 ASA DataFest")
-occ <- read.csv("Major Market Occupancy Data.csv")
-# The
-# occupancy rates are reported in percents, 
+
+occ <- read.csv("data/Major Market Occupancy Data.csv")
+
+# The occupancy rates are reported in percents, 
 # and the percents are based on a baseline value of
 # occupancy on March 1, 2020.
 
@@ -124,7 +124,6 @@ occ_f <- occ_decomposed %>%
   )
 # --- plot --- #
 houston_subdf <- occ_f[occ_f$market == "Houston", ]
-library(ggplot2)
 
 houston_subdf <- occ_f %>% filter(market == "Houston")
 
@@ -159,29 +158,15 @@ for(market in names(arma_models)){
     out$se_theta2[out$market == market] =  arma_i$std.error[2]
   }
 }
-write.csv(out, "occupancy_plus_decomp.csv", row.names = FALSE)
+# save time series data
+# write.csv(out, "occupancy_plus_decomp.csv", row.names = FALSE)
 
 # ------------- #
 # --- Plots --- #
 # ------------- #
-ggplot(out,
-       aes(
-         x = yearquarter,
-         y = mt,
-         color = market,
-         group = market
-       )) +
-  geom_line(size = 1) +
-  labs(
-    title = "Trend Component of Occupancy Proportion (All Markets)",
-    subtitle = "After LOESS Decomposition",
-    x = "Time (Year-Quarter)",
-    y = "Trend",
-    color = "Market"
-  ) + scale_color_brewer(palette = "Paired") + theme_bw()
 
-# pre-decomposition
-ggplot(out,
+# plot pre-decomposition (before removing seasonality)
+seasonal_occupancy <- ggplot(out,
        aes(
          x = yearquarter,
          y = occupancy_proportion,
@@ -190,13 +175,51 @@ ggplot(out,
        )) +
   geom_line(size = 1) +
   labs(
-    title = "Time Series  of Occupancy Proportion (All Markets)",
-    subtitle = "Prior to Decomposition",
+    title = "Occupancy Proportion Time Series by Market",
+    # subtitle = "Prior to Decomposition",
     x = "Time (Year-Quarter)",
-    y = "Value",
-    color = "Market"
-  ) + scale_color_brewer(palette = "Paired") + theme_bw()
-  
+    y = "Occupancy Proportion",
+    color = "Market") + 
+  scale_color_brewer(palette = "Paired") + 
+  theme_bw() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+seasonal_occupancy
+
+# save plot
+ggsave(filename = "outputs/seasonal_occupancy.png",
+       plot = seasonal_occupancy,
+       width = 7,
+       height = 6)
+
+
+
+
+deseasonalized_occupancy <- ggplot(out,
+       aes(
+         x = yearquarter,
+         y = mt,
+         color = market,
+         group = market
+       )) +
+  geom_line(size = 1) +
+  labs(
+    title = "Occupancy Proportion Trend Component by Market",
+    subtitle = "After LOESS Decomposition",
+    x = "Time (Year-Quarter)",
+    y = "Occupancy Proportion Trend",
+    color = "Market") + 
+  scale_color_brewer(palette = "Paired") +
+  theme_bw() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+deseasonalized_occupancy
+# save plot
+ggsave(filename = "outputs/deseasonalized_occupancy.png",
+       plot = deseasonalized_occupancy,
+       width = 7,
+       height = 6)
+
 
 # # add averages
 # occ_average <- occ_decomposed %>%
