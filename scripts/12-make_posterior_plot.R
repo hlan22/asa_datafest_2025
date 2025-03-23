@@ -37,16 +37,7 @@ df_bar <- data.frame(
   upper      = lambda_high[P, ],
   party = ifelse(grepl("republican", raw_strings), "Republican", "Democrat")
 )
-ggplot(df_bar, aes(x = reorder(market, lambda_bar), y = lambda_bar, fill = party)) +
-  geom_col() +
-  coord_flip() +
-  labs(
-    title = paste("Standardized Shrinkage for Predictor", P),
-    x = "Market",
-    y = expression(bar(lambda)),
-    fill = "Political Affiliation"
-  ) +
-  theme_minimal()
+
 med_shrinkage <- ggplot(df_bar, aes(x = reorder(market, lambda_bar), fill = party, y = lambda_bar)) +
   geom_col() +
   coord_flip() +
@@ -73,3 +64,39 @@ ggsave(filename = "outputs/median_shrinkage.png",
        width = 8,
        height = 6
        )
+
+# ------------ One Location ----------- #
+chicago_post <- all_fits$Chicago
+var_order <- c(
+  "Extreme Weather Events",
+  "Unemployment Rate",
+  "Traffic Congestion",
+  "Standardized Covid Cases",
+  "State Political Affiliation"
+) -> colnames(chicago_post$beta_raw) 
+coefs <- chicago_post$beta_raw
+coefs_df <- as.data.frame(coefs)
+coefs_df$iteration <- 1:nrow(coefs_df)
+
+coefs_long <- coefs_df %>%
+  pivot_longer(
+    cols = -iteration,
+    names_to = "predictor",
+    values_to = "value"
+  )
+coefs_long$predictor <- factor(coefs_long$predictor, levels = var_order)
+ggplot(coefs_long, aes(x = value, y = reorder(predictor, value), fill = predictor)) +
+  stat_halfeye(
+    .width = c(0.5, 0.95),
+    point_interval = median_qi, 
+    slab_color = "black",
+    alpha = 0.6
+  ) +
+  scale_fill_viridis_d() +
+  labs(
+    title = "Posterior Distributions of Coefficient Estimates",
+    subtitle = "Chicago Market Model with Median and 95% Credible Intervals",
+    x = "Posterior Coefficient value",
+    y = "Predictor"
+  ) +
+  theme_bw() + theme(legend.position = "none")
