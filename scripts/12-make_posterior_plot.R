@@ -1,7 +1,10 @@
 setwd(here::here())
 library(gridExtra)
 library(grid)
+library(tidyverse)
+library(bayesplot)
 df <- read.csv(here::here("additional_data", "clean", "final_data.csv"))
+df$covid_stdrd <- (df$covid_cases - mean(df$covid_cases))/sd(df$covid_cases)
 all_fits <- readRDS(here::here("additional_data", "clean", "all_models.RData"))
 
 markets <- unique((df$market))
@@ -160,3 +163,107 @@ grid_arranged <- do.call(grid.arrange, c(wrapped_plots, ncol = 3))
 png("outputs/posterior_grid.png", width = 1400, height = 1000, res = 150)
 grid.draw(grid_arranged)
 dev.off()
+
+# ---- Posterior Predictive -------- #
+colnames(df)
+X <- df[df$market == "Chicago", c("extreme_weather_num", "unemployment_rate", 
+            "hours_traffic", "covid_stdrd", 
+             "state_politics")]
+X$state_politics = as.numeric(X$state_politics  == "republican")
+X
+X <- as.matrix(X)
+
+post_df <- all_fits$Chicago
+mu_mat <- post_df$beta %*% t(X)  
+mu_mat <- sweep(mu_mat, 1, as.vector(post_df$beta0), "+")
+
+
+M <- nrow(mu_mat)
+P <- ncol(mu_mat)
+# Generate y_rep: M x T matrix of fake y's
+y_rep <- matrix(rnorm(M * P, mean = mu_mat, sd = post_df$sigma), nrow = M, ncol = P)
+y_obs <- df$mt[df$market == "Chicago"]
+
+# Summarize across posterior draws
+y_summary <- data.frame(
+  t = 1:ncol(y_rep),
+  fit_mean = colMeans(y_rep),
+  y_lower = apply(y_rep, 2, quantile, 0.025),
+  y_upper = apply(y_rep, 2, quantile, 0.975),
+  y_obs = y_obs  # observed values
+)
+
+ggplot(y_summary, aes(x = t)) +
+  geom_ribbon(aes(ymin = y_lower, ymax = y_upper), fill = "skyblue", alpha = 0.4) +
+  geom_line(aes(y = fit_mean), color = "blue", size = 1) +
+  geom_point(aes(y = y_obs), size = 2, color = "black") +
+  labs(
+    title = "Posterior Predictive Check",
+    subtitle = "Observed vs Predicted Occupancy with 95% Credible Interval",
+    x = "Time (t)",
+    y = "Occupancy Rate"
+  ) + ylim(-0.2,1) +
+  theme_minimal(base_size = 13)
+
+# ------------ points --------- #
+
+# Convert to long format
+y_rep_long <- as.data.frame(y_rep)
+y_rep_long$draw <- 1:nrow(y_rep_long)
+
+y_rep_long <- pivot_longer(
+  y_rep_long,
+  cols = -draw,
+  names_to = "t",
+  values_to = "y_pred"
+)
+
+# Convert column name to numeric time index
+y_rep_long$t <- as.integer(gsub("V", "", y_rep_long$t))
+# Add label to y_rep_long
+y_rep_long$group <- "Posterior Draw"
+# Add label to y_obs_df
+y_obs_df$group <- "Observed"
+year_labels <- rep(2020:2024, each = 4)[1:19]  # 2020 Q1 to 2024 Q3
+year_ticks <- c(1, 5, 9, 13, 17)
+year_tick_labels <- year_labels[year_ticks]
+# Create observed data frame for plotting
+y_obs_df <- data.frame(
+  t = 1:length(y_obs),
+  y_obs = y_obs
+)
+legend_df <- bind_rows(
+  y_rep_long %>% sample_n(500), 
+  y_obs_df
+)
+posterior_pred <- ggplot() +
+  geom_jitter(data = y_rep_long, aes(x = t, y = y_pred, color = "Posterior Draw"),
+              alpha = 0.01, width = 0.2, height = 0, show.legend = TRUE) +
+  geom_point(data = y_obs_df, aes(x = t, y = y_obs, color = "Observed"), size = 2) +
+  geom_line(data = y_obs_df, aes(x = t, y = y_obs, group = 1), color = "#353535", size = 1) +
+  scale_color_manual(
+    name = "Legend",
+    values = c("Posterior Draw" = "#3c6e71", "Observed" = "#353535")
+  ) +
+  guides(color = guide_legend(override.aes = list(alpha = 1, size = 2))) +
+  labs(
+    title = "Posterior Predictive Scatter — Chicago Market",
+    x = "Time (t)",
+    y = "Occupancy Rate"
+  ) +
+  scale_x_continuous(
+    breaks = year_ticks,
+    labels = year_tick_labels
+  ) +
+  theme_bw() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 9)
+  )
+posterior_pred
+ggsave(filename = "outputs/posterior_check_chicago.png",
+       plot = posterior_pred,
+       width = 8,
+       height = 6
+)
