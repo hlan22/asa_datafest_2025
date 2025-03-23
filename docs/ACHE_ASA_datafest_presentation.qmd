@@ -1,12 +1,35 @@
 ---
 title: "Analyzing Trends in Office Attendance \nIn Major US Markets"
-author: "Team ACHE: \nAnh, Caden, and Heidi!"
+author: "Team ACH: \nAnh, Caden, and Heidi!"
 format: revealjs
 editor: visual
 embed-resources: true
 ---
 
-## The Issue
+## Outline
+<br>
+<br>
+
+1. [Motivation and Research Question](#motivation)
+2. [Data Sourcing](#factors-that-may-affect-office-attendance)
+3. [Analysis](#analysis)
+4. [Future Directions](#future-directions)
+
+## Motivation
+
+- talk about Savills' challenge to us
+
+- We needed to narrow down and select something to focus on
+
+- We know with real estate it is important to know WHAT to buy
+  - how large of an office?
+  - what location? major markets?
+
+- In order to optimize size of location, you need to know how many people will show up to the office
+
+- However, modelling this after covid times can be complicated - we are here to do that
+
+## Response: Office Occupancy
 
 - Predicting who will show up to offices can be hard after covid
 
@@ -16,61 +39,86 @@ embed-resources: true
 
 ## Major Markets
 
-![Major Market Cities in the U.S.](../outputs/city_map.png){#fig-city-map fig-align="center" width="80%"}
+![Major Markets Recorded by Kastle](../outputs/city_map.png){#fig-city-map fig-align="center"}
 
-## Occupancy Rate
+## Office Occupancy
 
-![Time Series of Occupancy Rate](../outputs/seasonal_occupancy.png){#fig-occupancy fig-align="center"}
+![Seasonal Time Series of Occupancy](../outputs/seasonal_occupancy.png){#fig-occupancy fig-align="center"}
 
-comment on that it is seasonal time series data, remove seasonal trend
+## Office Occupancy: Deseasonalized
 
-## Occupancy Rate: Deseasonalized
-
-(show plot of occupancy without season changes)
-
-![Deseasonalized Occupancy Trends](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
-
-Talk about how we want to show factors that will change this over time
+![Trend Component of Occupancy (After LOESS Decomposition)](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
 
 ## Factors That May Affect Office Attendance
 
+:::: {.columns}
+
+::: {.column width="90%"}
 1. Extreme Weather Events
 2. Unemployment Rate
 3. Traffic Congestion
 4. Covid Cases
 5. State Political Affiliation
-6. Work-from-home Rate
+:::
 
-## Example Factor: Work-from-home Rate
+::: {.column width="10%"}
 
-- data from Kastle
+:::
 
-- guide through example of people working in person again increasing (?)
+::::
 
-- this suggests that since people returning from covid/2020 are now less likely to work in person, therefore
+
+## Example Factor: Political Affiliation
+
+![State Political Affiliation](../outputs/political_map.png){#fig-politics fig-align="center"}
+
+## Review Office Occupancy: Deseasonalized
+
+![Trend Component of Occupancy (After LOESS Decomposition)](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
 
 
 ## Our Research Question 
 
 <br>
-
 <br>
-
-<div style="text-align: center; font-size: 1.5em; font-weight: bold;">
+<div style="text-align: center; font-size: 1.4em; font-weight: bold;">
 What variables explain the increasing trend of post-COVID office occupancy across major markets?
 </div>
 
-## Analysis
+## Analysis: Method
 
+1
 
+## Analysis: Model
 
-## Other
+2
 
+## Analysis: Results
 
-extra yap: 
+3
+
+## Analysis: More Results
+
+4
+
+## Conclusions
+
+extra yap: connecting to the main question.
 What trends explain the trend what is making people return to office, and is it dependent on city
 
+## Future Directions
 
+<br>
+
+1. We are very limited by data collection
+
+<br>
+
+2. Prediction for clients' future Occupancy
+
+<br>
+
+3. Increasing interpretability for clients
 
 ## Credit
 
@@ -81,5 +129,9 @@ What trends explain the trend what is making people return to office, and is it 
   * [Extreme Weather Event](https://www.ncdc.noaa.gov/stormevents/)
   * [Traffic Congestion](https://grok.com/share/bGVnYWN5_4367bb2c-71a2-4443-92f3-cf90b150b7cf)
   * For Occupancy Rate and Unemployment Rate data, please see resources given to us
+
+* Thanks to **Savills** for providing the topic!
+
+* Thanks to **WiDS and ASA** for hosting the DataFest!
 
 ## Thanks! {.center}
