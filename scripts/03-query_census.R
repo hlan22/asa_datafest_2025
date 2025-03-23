@@ -1,7 +1,7 @@
 library(tidycensus)
 library(tidyverse)
 
-# Your variable vector remains unchanged
+# variable codes
 vars <- c(
   total_pop = "B01003_001",
   median_age = "B01002_001",
@@ -29,14 +29,13 @@ vars <- c(
 # Cities to filter
 cities <- c("Austin city, Texas",
             "Chicago city, Illinois",
-            "Dallas city, Texas",
-            "Fort Worth city, Texas",
+            "Dallas/Ft Worth, Texas",
             "Houston city, Texas",
             "Los Angeles city, California",
             "New York city, New York",
             "Philadelphia city, Pennsylvania",
             "San Francisco city, California",
-            "San Jose city, California",
+            "South Bay/San Jose, California",
             "Washington city, District of Columbia")
 
 counties <- c("Travis County, Texas",
@@ -123,3 +122,26 @@ imputed_wfh <- wfh_by_year %>%
   })
 wfh_by_year <- rbind(wfh_by_year, imputed_wfh) %>%
   arrange(market, year)
+wfh <- wfh_by_year %>%
+  tidyr::uncount(weights = 4, .id = "quarter") %>%
+  mutate(quarter = quarter,
+         yearquarter = paste0(year, "Q", 1))
+# test out a plot
+setwd("C://Users//thetr//OneDrive//Desktop//Misc//Personal Projects//asa_datafest_2025//additional_data//raw//")
+write.csv(wfh, "work_from_home.csv", row.names = FALSE)
+
+ggplot(wfh,
+       aes(
+         x = paste0(year,quarter),
+         y = pct_worked_from_home,
+         color = market,
+         group = market
+       )) +
+  geom_line(size = 1) +
+  labs(
+    title = "Proportion of Individuals Working from Home",
+    subtitle = "By Year, US Census Data",
+    x = "Year",
+    y = "Value",
+    color = "Market"
+  ) + scale_color_brewer(palette = "Paired") + theme_bw()

@@ -1,0 +1,581 @@
+"market","state","year","quarter","unemployment_rate"
+"Austin","TX",2020,"Q1",5
+"Austin","TX",2020,"Q2",12.8
+"Austin","TX",2020,"Q2",11.6
+"Austin","TX",2020,"Q2",10.1
+"Austin","TX",2020,"Q3",9.3
+"Austin","TX",2020,"Q3",8.1
+"Austin","TX",2020,"Q3",7.7
+"Austin","TX",2020,"Q4",7.1
+"Austin","TX",2020,"Q4",7
+"Austin","TX",2020,"Q4",6.9
+"Austin","TX",2021,"Q1",6.7
+"Austin","TX",2021,"Q1",6.6
+"Austin","TX",2021,"Q1",6.4
+"Austin","TX",2021,"Q2",6.2
+"Austin","TX",2021,"Q2",6
+"Austin","TX",2021,"Q2",5.8
+"Austin","TX",2021,"Q3",5.6
+"Austin","TX",2021,"Q3",5.3
+"Austin","TX",2021,"Q3",5.1
+"Austin","TX",2021,"Q4",4.9
+"Austin","TX",2021,"Q4",4.6
+"Austin","TX",2021,"Q4",4.5
+"Austin","TX",2022,"Q1",4.3
+"Austin","TX",2022,"Q1",4.1
+"Austin","TX",2022,"Q1",3.9
+"Austin","TX",2022,"Q2",3.8
+"Austin","TX",2022,"Q2",3.8
+"Austin","TX",2022,"Q2",3.8
+"Austin","TX",2022,"Q3",3.8
+"Austin","TX",2022,"Q3",3.8
+"Austin","TX",2022,"Q3",3.9
+"Austin","TX",2022,"Q4",4
+"Austin","TX",2022,"Q4",4
+"Austin","TX",2022,"Q4",4.1
+"Austin","TX",2023,"Q1",4.1
+"Austin","TX",2023,"Q1",4
+"Austin","TX",2023,"Q1",4
+"Austin","TX",2023,"Q2",4
+"Austin","TX",2023,"Q2",4
+"Austin","TX",2023,"Q2",3.9
+"Austin","TX",2023,"Q3",3.9
+"Austin","TX",2023,"Q3",3.9
+"Austin","TX",2023,"Q3",3.9
+"Austin","TX",2023,"Q4",3.9
+"Austin","TX",2023,"Q4",3.9
+"Austin","TX",2023,"Q4",3.9
+"Austin","TX",2024,"Q1",3.9
+"Austin","TX",2024,"Q1",3.9
+"Austin","TX",2024,"Q1",3.9
+"Austin","TX",2024,"Q2",4
+"Austin","TX",2024,"Q2",4
+"Austin","TX",2024,"Q2",4
+"Austin","TX",2024,"Q3",4.1
+"Austin","TX",2024,"Q3",4.1
+"Austin","TX",2024,"Q3",4.1
+"Austin","TX",2024,"Q4",4.1
+"Austin","TX",2024,"Q4",4.2
+"Austin","TX",2024,"Q4",4.2
+"Chicago","IL",2020,"Q1",5.1
+"Chicago","IL",2020,"Q2",18.1
+"Chicago","IL",2020,"Q2",14.7
+"Chicago","IL",2020,"Q2",12.6
+"Chicago","IL",2020,"Q3",11.4
+"Chicago","IL",2020,"Q3",9.7
+"Chicago","IL",2020,"Q3",9
+"Chicago","IL",2020,"Q4",8.1
+"Chicago","IL",2020,"Q4",7.8
+"Chicago","IL",2020,"Q4",7.6
+"Chicago","IL",2021,"Q1",7.2
+"Chicago","IL",2021,"Q1",7
+"Chicago","IL",2021,"Q1",6.8
+"Chicago","IL",2021,"Q2",6.7
+"Chicago","IL",2021,"Q2",6.5
+"Chicago","IL",2021,"Q2",6.4
+"Chicago","IL",2021,"Q3",6.2
+"Chicago","IL",2021,"Q3",5.9
+"Chicago","IL",2021,"Q3",5.5
+"Chicago","IL",2021,"Q4",5.2
+"Chicago","IL",2021,"Q4",5
+"Chicago","IL",2021,"Q4",4.8
+"Chicago","IL",2022,"Q1",4.7
+"Chicago","IL",2022,"Q1",4.7
+"Chicago","IL",2022,"Q1",4.6
+"Chicago","IL",2022,"Q2",4.5
+"Chicago","IL",2022,"Q2",4.5
+"Chicago","IL",2022,"Q2",4.5
+"Chicago","IL",2022,"Q3",4.5
+"Chicago","IL",2022,"Q3",4.5
+"Chicago","IL",2022,"Q3",4.6
+"Chicago","IL",2022,"Q4",4.6
+"Chicago","IL",2022,"Q4",4.6
+"Chicago","IL",2022,"Q4",4.5
+"Chicago","IL",2023,"Q1",4.4
+"Chicago","IL",2023,"Q1",4.3
+"Chicago","IL",2023,"Q1",4.2
+"Chicago","IL",2023,"Q2",4.2
+"Chicago","IL",2023,"Q2",4.2
+"Chicago","IL",2023,"Q2",4.3
+"Chicago","IL",2023,"Q3",4.4
+"Chicago","IL",2023,"Q3",4.6
+"Chicago","IL",2023,"Q3",4.7
+"Chicago","IL",2023,"Q4",4.8
+"Chicago","IL",2023,"Q4",4.7
+"Chicago","IL",2023,"Q4",4.7
+"Chicago","IL",2024,"Q1",4.7
+"Chicago","IL",2024,"Q1",4.8
+"Chicago","IL",2024,"Q1",4.8
+"Chicago","IL",2024,"Q2",4.8
+"Chicago","IL",2024,"Q2",4.9
+"Chicago","IL",2024,"Q2",5
+"Chicago","IL",2024,"Q3",5.2
+"Chicago","IL",2024,"Q3",5.3
+"Chicago","IL",2024,"Q3",5.3
+"Chicago","IL",2024,"Q4",5.3
+"Chicago","IL",2024,"Q4",5.3
+"Chicago","IL",2024,"Q4",5.2
+"Dallas/Ft Worth","TX",2020,"Q1",5
+"Dallas/Ft Worth","TX",2020,"Q2",12.8
+"Dallas/Ft Worth","TX",2020,"Q2",11.6
+"Dallas/Ft Worth","TX",2020,"Q2",10.1
+"Dallas/Ft Worth","TX",2020,"Q3",9.3
+"Dallas/Ft Worth","TX",2020,"Q3",8.1
+"Dallas/Ft Worth","TX",2020,"Q3",7.7
+"Dallas/Ft Worth","TX",2020,"Q4",7.1
+"Dallas/Ft Worth","TX",2020,"Q4",7
+"Dallas/Ft Worth","TX",2020,"Q4",6.9
+"Dallas/Ft Worth","TX",2021,"Q1",6.7
+"Dallas/Ft Worth","TX",2021,"Q1",6.6
+"Dallas/Ft Worth","TX",2021,"Q1",6.4
+"Dallas/Ft Worth","TX",2021,"Q2",6.2
+"Dallas/Ft Worth","TX",2021,"Q2",6
+"Dallas/Ft Worth","TX",2021,"Q2",5.8
+"Dallas/Ft Worth","TX",2021,"Q3",5.6
+"Dallas/Ft Worth","TX",2021,"Q3",5.3
+"Dallas/Ft Worth","TX",2021,"Q3",5.1
+"Dallas/Ft Worth","TX",2021,"Q4",4.9
+"Dallas/Ft Worth","TX",2021,"Q4",4.6
+"Dallas/Ft Worth","TX",2021,"Q4",4.5
+"Dallas/Ft Worth","TX",2022,"Q1",4.3
+"Dallas/Ft Worth","TX",2022,"Q1",4.1
+"Dallas/Ft Worth","TX",2022,"Q1",3.9
+"Dallas/Ft Worth","TX",2022,"Q2",3.8
+"Dallas/Ft Worth","TX",2022,"Q2",3.8
+"Dallas/Ft Worth","TX",2022,"Q2",3.8
+"Dallas/Ft Worth","TX",2022,"Q3",3.8
+"Dallas/Ft Worth","TX",2022,"Q3",3.8
+"Dallas/Ft Worth","TX",2022,"Q3",3.9
+"Dallas/Ft Worth","TX",2022,"Q4",4
+"Dallas/Ft Worth","TX",2022,"Q4",4
+"Dallas/Ft Worth","TX",2022,"Q4",4.1
+"Dallas/Ft Worth","TX",2023,"Q1",4.1
+"Dallas/Ft Worth","TX",2023,"Q1",4
+"Dallas/Ft Worth","TX",2023,"Q1",4
+"Dallas/Ft Worth","TX",2023,"Q2",4
+"Dallas/Ft Worth","TX",2023,"Q2",4
+"Dallas/Ft Worth","TX",2023,"Q2",3.9
+"Dallas/Ft Worth","TX",2023,"Q3",3.9
+"Dallas/Ft Worth","TX",2023,"Q3",3.9
+"Dallas/Ft Worth","TX",2023,"Q3",3.9
+"Dallas/Ft Worth","TX",2023,"Q4",3.9
+"Dallas/Ft Worth","TX",2023,"Q4",3.9
+"Dallas/Ft Worth","TX",2023,"Q4",3.9
+"Dallas/Ft Worth","TX",2024,"Q1",3.9
+"Dallas/Ft Worth","TX",2024,"Q1",3.9
+"Dallas/Ft Worth","TX",2024,"Q1",3.9
+"Dallas/Ft Worth","TX",2024,"Q2",4
+"Dallas/Ft Worth","TX",2024,"Q2",4
+"Dallas/Ft Worth","TX",2024,"Q2",4
+"Dallas/Ft Worth","TX",2024,"Q3",4.1
+"Dallas/Ft Worth","TX",2024,"Q3",4.1
+"Dallas/Ft Worth","TX",2024,"Q3",4.1
+"Dallas/Ft Worth","TX",2024,"Q4",4.1
+"Dallas/Ft Worth","TX",2024,"Q4",4.2
+"Dallas/Ft Worth","TX",2024,"Q4",4.2
+"Houston","TX",2020,"Q1",5
+"Houston","TX",2020,"Q2",12.8
+"Houston","TX",2020,"Q2",11.6
+"Houston","TX",2020,"Q2",10.1
+"Houston","TX",2020,"Q3",9.3
+"Houston","TX",2020,"Q3",8.1
+"Houston","TX",2020,"Q3",7.7
+"Houston","TX",2020,"Q4",7.1
+"Houston","TX",2020,"Q4",7
+"Houston","TX",2020,"Q4",6.9
+"Houston","TX",2021,"Q1",6.7
+"Houston","TX",2021,"Q1",6.6
+"Houston","TX",2021,"Q1",6.4
+"Houston","TX",2021,"Q2",6.2
+"Houston","TX",2021,"Q2",6
+"Houston","TX",2021,"Q2",5.8
+"Houston","TX",2021,"Q3",5.6
+"Houston","TX",2021,"Q3",5.3
+"Houston","TX",2021,"Q3",5.1
+"Houston","TX",2021,"Q4",4.9
+"Houston","TX",2021,"Q4",4.6
+"Houston","TX",2021,"Q4",4.5
+"Houston","TX",2022,"Q1",4.3
+"Houston","TX",2022,"Q1",4.1
+"Houston","TX",2022,"Q1",3.9
+"Houston","TX",2022,"Q2",3.8
+"Houston","TX",2022,"Q2",3.8
+"Houston","TX",2022,"Q2",3.8
+"Houston","TX",2022,"Q3",3.8
+"Houston","TX",2022,"Q3",3.8
+"Houston","TX",2022,"Q3",3.9
+"Houston","TX",2022,"Q4",4
+"Houston","TX",2022,"Q4",4
+"Houston","TX",2022,"Q4",4.1
+"Houston","TX",2023,"Q1",4.1
+"Houston","TX",2023,"Q1",4
+"Houston","TX",2023,"Q1",4
+"Houston","TX",2023,"Q2",4
+"Houston","TX",2023,"Q2",4
+"Houston","TX",2023,"Q2",3.9
+"Houston","TX",2023,"Q3",3.9
+"Houston","TX",2023,"Q3",3.9
+"Houston","TX",2023,"Q3",3.9
+"Houston","TX",2023,"Q4",3.9
+"Houston","TX",2023,"Q4",3.9
+"Houston","TX",2023,"Q4",3.9
+"Houston","TX",2024,"Q1",3.9
+"Houston","TX",2024,"Q1",3.9
+"Houston","TX",2024,"Q1",3.9
+"Houston","TX",2024,"Q2",4
+"Houston","TX",2024,"Q2",4
+"Houston","TX",2024,"Q2",4
+"Houston","TX",2024,"Q3",4.1
+"Houston","TX",2024,"Q3",4.1
+"Houston","TX",2024,"Q3",4.1
+"Houston","TX",2024,"Q4",4.1
+"Houston","TX",2024,"Q4",4.2
+"Houston","TX",2024,"Q4",4.2
+"Los Angeles","CA",2020,"Q1",5.5
+"Los Angeles","CA",2020,"Q2",16.1
+"Los Angeles","CA",2020,"Q2",15.8
+"Los Angeles","CA",2020,"Q2",13.8
+"Los Angeles","CA",2020,"Q3",13.2
+"Los Angeles","CA",2020,"Q3",11.9
+"Los Angeles","CA",2020,"Q3",10
+"Los Angeles","CA",2020,"Q4",9.3
+"Los Angeles","CA",2020,"Q4",9
+"Los Angeles","CA",2020,"Q4",9
+"Los Angeles","CA",2021,"Q1",8.7
+"Los Angeles","CA",2021,"Q1",8.6
+"Los Angeles","CA",2021,"Q1",8.4
+"Los Angeles","CA",2021,"Q2",8.3
+"Los Angeles","CA",2021,"Q2",7.9
+"Los Angeles","CA",2021,"Q2",7.8
+"Los Angeles","CA",2021,"Q3",7.4
+"Los Angeles","CA",2021,"Q3",7
+"Los Angeles","CA",2021,"Q3",6.5
+"Los Angeles","CA",2021,"Q4",6.1
+"Los Angeles","CA",2021,"Q4",5.7
+"Los Angeles","CA",2021,"Q4",5.5
+"Los Angeles","CA",2022,"Q1",5.2
+"Los Angeles","CA",2022,"Q1",4.8
+"Los Angeles","CA",2022,"Q1",4.4
+"Los Angeles","CA",2022,"Q2",4.2
+"Los Angeles","CA",2022,"Q2",4.1
+"Los Angeles","CA",2022,"Q2",4
+"Los Angeles","CA",2022,"Q3",3.9
+"Los Angeles","CA",2022,"Q3",3.8
+"Los Angeles","CA",2022,"Q3",4
+"Los Angeles","CA",2022,"Q4",4.2
+"Los Angeles","CA",2022,"Q4",4.3
+"Los Angeles","CA",2022,"Q4",4.4
+"Los Angeles","CA",2023,"Q1",4.5
+"Los Angeles","CA",2023,"Q1",4.5
+"Los Angeles","CA",2023,"Q1",4.5
+"Los Angeles","CA",2023,"Q2",4.5
+"Los Angeles","CA",2023,"Q2",4.5
+"Los Angeles","CA",2023,"Q2",4.6
+"Los Angeles","CA",2023,"Q3",4.7
+"Los Angeles","CA",2023,"Q3",4.8
+"Los Angeles","CA",2023,"Q3",5
+"Los Angeles","CA",2023,"Q4",5.1
+"Los Angeles","CA",2023,"Q4",5.1
+"Los Angeles","CA",2023,"Q4",5.1
+"Los Angeles","CA",2024,"Q1",5.2
+"Los Angeles","CA",2024,"Q1",5.3
+"Los Angeles","CA",2024,"Q1",5.3
+"Los Angeles","CA",2024,"Q2",5.3
+"Los Angeles","CA",2024,"Q2",5.2
+"Los Angeles","CA",2024,"Q2",5.2
+"Los Angeles","CA",2024,"Q3",5.2
+"Los Angeles","CA",2024,"Q3",5.3
+"Los Angeles","CA",2024,"Q3",5.3
+"Los Angeles","CA",2024,"Q4",5.4
+"Los Angeles","CA",2024,"Q4",5.4
+"Los Angeles","CA",2024,"Q4",5.5
+"New York","NY",2020,"Q1",4.2
+"New York","NY",2020,"Q2",15.6
+"New York","NY",2020,"Q2",16.7
+"New York","NY",2020,"Q2",13.6
+"New York","NY",2020,"Q3",12.5
+"New York","NY",2020,"Q3",10.8
+"New York","NY",2020,"Q3",10.2
+"New York","NY",2020,"Q4",9.2
+"New York","NY",2020,"Q4",9
+"New York","NY",2020,"Q4",8.7
+"New York","NY",2021,"Q1",8.6
+"New York","NY",2021,"Q1",8.4
+"New York","NY",2021,"Q1",8.1
+"New York","NY",2021,"Q2",7.9
+"New York","NY",2021,"Q2",7.5
+"New York","NY",2021,"Q2",7.5
+"New York","NY",2021,"Q3",7
+"New York","NY",2021,"Q3",6.8
+"New York","NY",2021,"Q3",6.3
+"New York","NY",2021,"Q4",5.9
+"New York","NY",2021,"Q4",5.6
+"New York","NY",2021,"Q4",5.5
+"New York","NY",2022,"Q1",5.2
+"New York","NY",2022,"Q1",4.8
+"New York","NY",2022,"Q1",4.6
+"New York","NY",2022,"Q2",4.4
+"New York","NY",2022,"Q2",4.3
+"New York","NY",2022,"Q2",4.2
+"New York","NY",2022,"Q3",4
+"New York","NY",2022,"Q3",3.9
+"New York","NY",2022,"Q3",4
+"New York","NY",2022,"Q4",4.1
+"New York","NY",2022,"Q4",4.2
+"New York","NY",2022,"Q4",4.2
+"New York","NY",2023,"Q1",4.1
+"New York","NY",2023,"Q1",4
+"New York","NY",2023,"Q1",4
+"New York","NY",2023,"Q2",3.9
+"New York","NY",2023,"Q2",3.9
+"New York","NY",2023,"Q2",4
+"New York","NY",2023,"Q3",4.1
+"New York","NY",2023,"Q3",4.3
+"New York","NY",2023,"Q3",4.4
+"New York","NY",2023,"Q4",4.6
+"New York","NY",2023,"Q4",4.6
+"New York","NY",2023,"Q4",4.6
+"New York","NY",2024,"Q1",4.5
+"New York","NY",2024,"Q1",4.4
+"New York","NY",2024,"Q1",4.3
+"New York","NY",2024,"Q2",4.2
+"New York","NY",2024,"Q2",4.2
+"New York","NY",2024,"Q2",4.2
+"New York","NY",2024,"Q3",4.3
+"New York","NY",2024,"Q3",4.4
+"New York","NY",2024,"Q3",4.4
+"New York","NY",2024,"Q4",4.4
+"New York","NY",2024,"Q4",4.4
+"New York","NY",2024,"Q4",4.4
+"Philadelphia","PA",2020,"Q1",4.9
+"Philadelphia","PA",2020,"Q2",16.1
+"Philadelphia","PA",2020,"Q2",12.9
+"Philadelphia","PA",2020,"Q2",11.3
+"Philadelphia","PA",2020,"Q3",10.4
+"Philadelphia","PA",2020,"Q3",9.3
+"Philadelphia","PA",2020,"Q3",8.8
+"Philadelphia","PA",2020,"Q4",8.1
+"Philadelphia","PA",2020,"Q4",7.9
+"Philadelphia","PA",2020,"Q4",7.6
+"Philadelphia","PA",2021,"Q1",7.4
+"Philadelphia","PA",2021,"Q1",7.1
+"Philadelphia","PA",2021,"Q1",6.8
+"Philadelphia","PA",2021,"Q2",6.6
+"Philadelphia","PA",2021,"Q2",6.3
+"Philadelphia","PA",2021,"Q2",6.1
+"Philadelphia","PA",2021,"Q3",5.9
+"Philadelphia","PA",2021,"Q3",5.6
+"Philadelphia","PA",2021,"Q3",5.2
+"Philadelphia","PA",2021,"Q4",4.9
+"Philadelphia","PA",2021,"Q4",4.7
+"Philadelphia","PA",2021,"Q4",4.5
+"Philadelphia","PA",2022,"Q1",4.3
+"Philadelphia","PA",2022,"Q1",4.2
+"Philadelphia","PA",2022,"Q1",4.2
+"Philadelphia","PA",2022,"Q2",4.1
+"Philadelphia","PA",2022,"Q2",4.1
+"Philadelphia","PA",2022,"Q2",4.1
+"Philadelphia","PA",2022,"Q3",4
+"Philadelphia","PA",2022,"Q3",4
+"Philadelphia","PA",2022,"Q3",4
+"Philadelphia","PA",2022,"Q4",3.9
+"Philadelphia","PA",2022,"Q4",3.9
+"Philadelphia","PA",2022,"Q4",3.8
+"Philadelphia","PA",2023,"Q1",3.8
+"Philadelphia","PA",2023,"Q1",3.7
+"Philadelphia","PA",2023,"Q1",3.5
+"Philadelphia","PA",2023,"Q2",3.4
+"Philadelphia","PA",2023,"Q2",3.3
+"Philadelphia","PA",2023,"Q2",3.2
+"Philadelphia","PA",2023,"Q3",3.2
+"Philadelphia","PA",2023,"Q3",3.3
+"Philadelphia","PA",2023,"Q3",3.3
+"Philadelphia","PA",2023,"Q4",3.4
+"Philadelphia","PA",2023,"Q4",3.4
+"Philadelphia","PA",2023,"Q4",3.4
+"Philadelphia","PA",2024,"Q1",3.4
+"Philadelphia","PA",2024,"Q1",3.4
+"Philadelphia","PA",2024,"Q1",3.4
+"Philadelphia","PA",2024,"Q2",3.4
+"Philadelphia","PA",2024,"Q2",3.4
+"Philadelphia","PA",2024,"Q2",3.4
+"Philadelphia","PA",2024,"Q3",3.4
+"Philadelphia","PA",2024,"Q3",3.4
+"Philadelphia","PA",2024,"Q3",3.4
+"Philadelphia","PA",2024,"Q4",3.4
+"Philadelphia","PA",2024,"Q4",3.5
+"Philadelphia","PA",2024,"Q4",3.6
+"San Francisco","CA",2020,"Q1",5.5
+"San Francisco","CA",2020,"Q2",16.1
+"San Francisco","CA",2020,"Q2",15.8
+"San Francisco","CA",2020,"Q2",13.8
+"San Francisco","CA",2020,"Q3",13.2
+"San Francisco","CA",2020,"Q3",11.9
+"San Francisco","CA",2020,"Q3",10
+"San Francisco","CA",2020,"Q4",9.3
+"San Francisco","CA",2020,"Q4",9
+"San Francisco","CA",2020,"Q4",9
+"San Francisco","CA",2021,"Q1",8.7
+"San Francisco","CA",2021,"Q1",8.6
+"San Francisco","CA",2021,"Q1",8.4
+"San Francisco","CA",2021,"Q2",8.3
+"San Francisco","CA",2021,"Q2",7.9
+"San Francisco","CA",2021,"Q2",7.8
+"San Francisco","CA",2021,"Q3",7.4
+"San Francisco","CA",2021,"Q3",7
+"San Francisco","CA",2021,"Q3",6.5
+"San Francisco","CA",2021,"Q4",6.1
+"San Francisco","CA",2021,"Q4",5.7
+"San Francisco","CA",2021,"Q4",5.5
+"San Francisco","CA",2022,"Q1",5.2
+"San Francisco","CA",2022,"Q1",4.8
+"San Francisco","CA",2022,"Q1",4.4
+"San Francisco","CA",2022,"Q2",4.2
+"San Francisco","CA",2022,"Q2",4.1
+"San Francisco","CA",2022,"Q2",4
+"San Francisco","CA",2022,"Q3",3.9
+"San Francisco","CA",2022,"Q3",3.8
+"San Francisco","CA",2022,"Q3",4
+"San Francisco","CA",2022,"Q4",4.2
+"San Francisco","CA",2022,"Q4",4.3
+"San Francisco","CA",2022,"Q4",4.4
+"San Francisco","CA",2023,"Q1",4.5
+"San Francisco","CA",2023,"Q1",4.5
+"San Francisco","CA",2023,"Q1",4.5
+"San Francisco","CA",2023,"Q2",4.5
+"San Francisco","CA",2023,"Q2",4.5
+"San Francisco","CA",2023,"Q2",4.6
+"San Francisco","CA",2023,"Q3",4.7
+"San Francisco","CA",2023,"Q3",4.8
+"San Francisco","CA",2023,"Q3",5
+"San Francisco","CA",2023,"Q4",5.1
+"San Francisco","CA",2023,"Q4",5.1
+"San Francisco","CA",2023,"Q4",5.1
+"San Francisco","CA",2024,"Q1",5.2
+"San Francisco","CA",2024,"Q1",5.3
+"San Francisco","CA",2024,"Q1",5.3
+"San Francisco","CA",2024,"Q2",5.3
+"San Francisco","CA",2024,"Q2",5.2
+"San Francisco","CA",2024,"Q2",5.2
+"San Francisco","CA",2024,"Q3",5.2
+"San Francisco","CA",2024,"Q3",5.3
+"San Francisco","CA",2024,"Q3",5.3
+"San Francisco","CA",2024,"Q4",5.4
+"San Francisco","CA",2024,"Q4",5.4
+"San Francisco","CA",2024,"Q4",5.5
+"South Bay/San Jose","CA",2020,"Q1",5.5
+"South Bay/San Jose","CA",2020,"Q2",16.1
+"South Bay/San Jose","CA",2020,"Q2",15.8
+"South Bay/San Jose","CA",2020,"Q2",13.8
+"South Bay/San Jose","CA",2020,"Q3",13.2
+"South Bay/San Jose","CA",2020,"Q3",11.9
+"South Bay/San Jose","CA",2020,"Q3",10
+"South Bay/San Jose","CA",2020,"Q4",9.3
+"South Bay/San Jose","CA",2020,"Q4",9
+"South Bay/San Jose","CA",2020,"Q4",9
+"South Bay/San Jose","CA",2021,"Q1",8.7
+"South Bay/San Jose","CA",2021,"Q1",8.6
+"South Bay/San Jose","CA",2021,"Q1",8.4
+"South Bay/San Jose","CA",2021,"Q2",8.3
+"South Bay/San Jose","CA",2021,"Q2",7.9
+"South Bay/San Jose","CA",2021,"Q2",7.8
+"South Bay/San Jose","CA",2021,"Q3",7.4
+"South Bay/San Jose","CA",2021,"Q3",7
+"South Bay/San Jose","CA",2021,"Q3",6.5
+"South Bay/San Jose","CA",2021,"Q4",6.1
+"South Bay/San Jose","CA",2021,"Q4",5.7
+"South Bay/San Jose","CA",2021,"Q4",5.5
+"South Bay/San Jose","CA",2022,"Q1",5.2
+"South Bay/San Jose","CA",2022,"Q1",4.8
+"South Bay/San Jose","CA",2022,"Q1",4.4
+"South Bay/San Jose","CA",2022,"Q2",4.2
+"South Bay/San Jose","CA",2022,"Q2",4.1
+"South Bay/San Jose","CA",2022,"Q2",4
+"South Bay/San Jose","CA",2022,"Q3",3.9
+"South Bay/San Jose","CA",2022,"Q3",3.8
+"South Bay/San Jose","CA",2022,"Q3",4
+"South Bay/San Jose","CA",2022,"Q4",4.2
+"South Bay/San Jose","CA",2022,"Q4",4.3
+"South Bay/San Jose","CA",2022,"Q4",4.4
+"South Bay/San Jose","CA",2023,"Q1",4.5
+"South Bay/San Jose","CA",2023,"Q1",4.5
+"South Bay/San Jose","CA",2023,"Q1",4.5
+"South Bay/San Jose","CA",2023,"Q2",4.5
+"South Bay/San Jose","CA",2023,"Q2",4.5
+"South Bay/San Jose","CA",2023,"Q2",4.6
+"South Bay/San Jose","CA",2023,"Q3",4.7
+"South Bay/San Jose","CA",2023,"Q3",4.8
+"South Bay/San Jose","CA",2023,"Q3",5
+"South Bay/San Jose","CA",2023,"Q4",5.1
+"South Bay/San Jose","CA",2023,"Q4",5.1
+"South Bay/San Jose","CA",2023,"Q4",5.1
+"South Bay/San Jose","CA",2024,"Q1",5.2
+"South Bay/San Jose","CA",2024,"Q1",5.3
+"South Bay/San Jose","CA",2024,"Q1",5.3
+"South Bay/San Jose","CA",2024,"Q2",5.3
+"South Bay/San Jose","CA",2024,"Q2",5.2
+"South Bay/San Jose","CA",2024,"Q2",5.2
+"South Bay/San Jose","CA",2024,"Q3",5.2
+"South Bay/San Jose","CA",2024,"Q3",5.3
+"South Bay/San Jose","CA",2024,"Q3",5.3
+"South Bay/San Jose","CA",2024,"Q4",5.4
+"South Bay/San Jose","CA",2024,"Q4",5.4
+"South Bay/San Jose","CA",2024,"Q4",5.5
+"Washington","DC",2020,"Q1",5.8
+"Washington","DC",2020,"Q2",11.2
+"Washington","DC",2020,"Q2",8.8
+"Washington","DC",2020,"Q2",8.6
+"Washington","DC",2020,"Q3",8.6
+"Washington","DC",2020,"Q3",8.4
+"Washington","DC",2020,"Q3",8.4
+"Washington","DC",2020,"Q4",8.1
+"Washington","DC",2020,"Q4",7.9
+"Washington","DC",2020,"Q4",7.7
+"Washington","DC",2021,"Q1",7.3
+"Washington","DC",2021,"Q1",7.1
+"Washington","DC",2021,"Q1",7
+"Washington","DC",2021,"Q2",7.1
+"Washington","DC",2021,"Q2",7.1
+"Washington","DC",2021,"Q2",7.3
+"Washington","DC",2021,"Q3",7.1
+"Washington","DC",2021,"Q3",7
+"Washington","DC",2021,"Q3",6.6
+"Washington","DC",2021,"Q4",6.5
+"Washington","DC",2021,"Q4",6.3
+"Washington","DC",2021,"Q4",6.1
+"Washington","DC",2022,"Q1",6
+"Washington","DC",2022,"Q1",5.6
+"Washington","DC",2022,"Q1",5.2
+"Washington","DC",2022,"Q2",4.9
+"Washington","DC",2022,"Q2",4.7
+"Washington","DC",2022,"Q2",4.4
+"Washington","DC",2022,"Q3",4.2
+"Washington","DC",2022,"Q3",4
+"Washington","DC",2022,"Q3",4.2
+"Washington","DC",2022,"Q4",4.4
+"Washington","DC",2022,"Q4",4.6
+"Washington","DC",2022,"Q4",4.8
+"Washington","DC",2023,"Q1",4.9
+"Washington","DC",2023,"Q1",5
+"Washington","DC",2023,"Q1",5
+"Washington","DC",2023,"Q2",4.9
+"Washington","DC",2023,"Q2",4.8
+"Washington","DC",2023,"Q2",4.8
+"Washington","DC",2023,"Q3",4.7
+"Washington","DC",2023,"Q3",4.8
+"Washington","DC",2023,"Q3",4.9
+"Washington","DC",2023,"Q4",4.9
+"Washington","DC",2023,"Q4",4.9
+"Washington","DC",2023,"Q4",4.9
+"Washington","DC",2024,"Q1",5
+"Washington","DC",2024,"Q1",5.1
+"Washington","DC",2024,"Q1",5.2
+"Washington","DC",2024,"Q2",5.2
+"Washington","DC",2024,"Q2",5.3
+"Washington","DC",2024,"Q2",5.4
+"Washington","DC",2024,"Q3",5.5
+"Washington","DC",2024,"Q3",5.7
+"Washington","DC",2024,"Q3",5.7
+"Washington","DC",2024,"Q4",5.7
+"Washington","DC",2024,"Q4",5.6
+"Washington","DC",2024,"Q4",5.5
