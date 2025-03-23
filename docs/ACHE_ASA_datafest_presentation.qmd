@@ -1,0 +1,58 @@
+---
+title: "Analyzing Trends in Office Attendance \nIn Major US Markets"
+author: "Team ACHE: \nAnh, Caden, Heidi, and Ethan!"
+format: revealjs
+editor: visual
+---
+
+## The Issue
+
+- Predicting who will show up to offices can be hard after covid
+
+- What if you care about attendance at an office you choose? What if the market you choose to settle in affects who attends work?
+
+- Using data from Kastle, we talk about the occupancy rate
+
+## Occupancy Rate
+
+(show plot of seasonal trend with occupancy)
+
+comment on that it is seasonal time series data, remove seasonal trend
+
+## Occupancy Rate: Deseasonalized
+
+(show plot of occupancy without season changes)
+
+Talk about how we want to show factors that will change this over time
+
+## Factors that may Affect Attendance
+
+The factors we believe are important (per market):
+
+1. Extreme Weather Events
+2. Unemployment Rate
+3. Traffic Congestion
+4. Covid Cases
+5. State Political Affiliation
+6. Work-from-home Rate
+
+## Example Factor: Work-from-home Rate
+
+- guide through example of people working in person again increasing (?)
+
+- this suggests that since people returning from covid/2020 are now less likely to work in person, therefore
+
+
+## Research Question
+
+Our main research question
+
+## Analysis
+
+## Other
+
+## Credit
+
+* For help making the [Quarto Presentation](https://quarto.org/docs/presentations/)
+
+* Data Sources
