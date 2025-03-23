@@ -12,30 +12,35 @@ embed-resources: true
 
 1. [Motivation and Research Question](#motivation)
 2. [Data Sourcing](#factors-that-may-affect-office-attendance)
-3. [Analysis](#analysis)
+3. [Analysis and Results](#analysis-:-method)
 4. [Future Directions](#future-directions)
 
 ## Motivation
 
-- talk about Savills' challenge to us
+<br> 
 
-- We needed to narrow down and select something to focus on
+**The Challenge:** 
 
-- We know with real estate it is important to know WHAT to buy
-  - how large of an office?
-  - what location? major markets?
+  * *"Inform Savills of notable trends or microtrends in the commercial real estate market that could be used to advise clients on where, when, whether and how to locate their offices."*
 
-- In order to optimize size of location, you need to know how many people will show up to the office
 
-- However, modelling this after covid times can be complicated - we are here to do that
+**Our Interest:** 
 
-## Response: Office Occupancy
+  * Understanding trends in why people show up to the office, so that clients can optimize their office size.
 
-- Predicting who will show up to offices can be hard after covid
+## 'Office Occupancy' As A Response
 
-- What if you care about attendance at an office you choose? What if the market you choose to settle in affects who attends work?
+<br>
 
-- Using data from Kastle, we talk about the occupancy rate
+- Data is collected by **Kastle**
+
+<br>
+
+- Tells us proportion of people who attend the office **in comparison to March 1, 2020**
+
+<br>
+
+- We want to be able to understand the trend of occupancy, and eventually predict occupancy for the future
 
 ## Major Markets
 
@@ -49,30 +54,22 @@ embed-resources: true
 
 ![Trend Component of Occupancy (After LOESS Decomposition)](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
 
-## Factors That May Affect Office Attendance
+## Factors That Affect Office Attendance
 
-:::: {.columns}
+<br>
 
-::: {.column width="90%"}
 1. Extreme Weather Events
 2. Unemployment Rate
 3. Traffic Congestion
 4. Covid Cases
 5. State Political Affiliation
-:::
-
-::: {.column width="10%"}
-
-:::
-
-::::
 
 
 ## Example Factor: Political Affiliation
 
 ![State Political Affiliation](../outputs/political_map.png){#fig-politics fig-align="center"}
 
-## Review Office Occupancy: Deseasonalized
+## Office Occupancy: Deseasonalized
 
 ![Trend Component of Occupancy (After LOESS Decomposition)](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
 
@@ -85,36 +82,100 @@ embed-resources: true
 What variables explain the increasing trend of post-COVID office occupancy across major markets?
 </div>
 
-## Analysis: Method
+## Analysis: Methods
 
-1
+<br>
+
+- Bayesian Model
+
+<br>
+
+- Regularization of the predictors
+
+<br>
+
+- Hierarchical multivariate normal regression
 
 ## Analysis: Model
 
-2
 
-## Analysis: Results
+<br>
 
-3
+<div style="font-size: 0.55em;">
+::: {.incremental}
+* For major markets $j \in [1, 10]:$
+$$
+\begin{aligned}
+\sigma^{(j)} &\sim \text{Exponential}(0.1) 
+    && \text{Unexplained variation (noise) in this market} \\
+\beta_0^{(j)} &\sim \mathcal{N}(0, 1) 
+    && \text{Intercept (baseline occupancy for this market)} \\
+\tau^{(j)} &\sim \mathcal{C}^{+}(0, 1) 
+     && \text{How complex the model is "allowed to be" in this market} \\
+\end{aligned}
+$$
 
-## Analysis: More Results
+* For explanatory variables $i \in [1, 5]:$
+$$
+\begin{aligned}
+\lambda_i^{(j)} &\sim \mathcal{C}^{+}(0, 1) 
+     && \text{How much the variable "matters" in this market}\\
+\beta_i^{(j)} &\sim \mathcal{N}\big(0, (\lambda_i^{(j)})^{2} \cdot (\tau^{(j)})^{2}\big) 
+    && \text{Overall effect of the variable in this market} \\
+\end{aligned}
+$$
+* Model: 
+$$
+\begin{aligned}
+\mu_t^{(j)} &= \beta_0^{(j)} + \sum_{i=1}^5 \beta_i^{(j)} x_{i,t} 
+    &&\text{Predicted occupancy at time } t \text{ for this market} \\
+M_t^{(j)} &\sim \mathcal{N}(\mu_t^{(j)}, \sigma^{(j)}) 
+    && \text{Observed occupancy rate (data likelihood)}
+\end{aligned}
+$$
+:::
+</div>
 
-4
+## Results: One Covariate for All Markets
+
+![Relative importance of political affiliation as predictor of office occupancy](../outputs/median_shrinkage.png){#fig-median fig-align="center"}
+
+
+
+## Results: All Covariates for One Market
+
+
+![Chicago Coefficient Estimates](../outputs/posterior_chicago.png){#fig-chicago fig-align="center"}
+
+## Results: All Markets
+
+![All Market Coefficient Estimates](../outputs/posterior_grid.png){#fig-estimates fig-align="center"}
+
+## Model Verification
+
+![Posterior Prediction](../outputs/posterior_check_chicago.png){#fig-posterior fig-align="center"}
 
 ## Conclusions
 
-extra yap: connecting to the main question.
-What trends explain the trend what is making people return to office, and is it dependent on city
+* Different variables have **unique impacts on major markets**
+
+* The model is **easily extendable** to add more covariates
+
+* Our model gives useful results in two main ways:
+  * **For Savills:** Better understand which properties to advertise to their clients
+  * **For the Client:** Understand which market is best suited for them based on external factors
+
+* We were surprised by the relationship with **traffic congestion**
 
 ## Future Directions
 
 <br>
 
-1. We are very limited by data collection
+1. We were very limited by data collection
 
 <br>
 
-2. Prediction for clients' future Occupancy
+2. Want to do prediction for a client's future office occupancy
 
 <br>
 
