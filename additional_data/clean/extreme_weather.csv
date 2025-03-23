@@ -1,0 +1,193 @@
+﻿City,Quarter,Year,Count of Extreme Weather Event
+Dallas,Q1,2020,2
+Dallas,Q2,2020,6
+Dallas,Q3,2020,10
+Dallas,Q4,2020,2
+Dallas,Q1,2021,8
+Dallas,Q2,2021,9
+Dallas,Q3,2021,6
+Dallas,Q4,2021,3
+Dallas,Q1,2022,10
+Dallas,Q2,2022,8
+Dallas,Q3,2022,11
+Dallas,Q4,2022,2
+Dallas,Q1,2023,5
+Dallas,Q2,2023,12
+Dallas,Q3,2023,12
+Dallas,Q4,2023,5
+Dallas,Q1,2024,1
+Dallas,Q2,2024,17
+Dallas,Q3,2024,10
+Dallas,Q4,2024,5
+Chicago,Q1,2020,2
+Chicago,Q2,2020,13
+Chicago,Q3,2020,10
+Chicago,Q4,2020,4
+Chicago,Q1,2021,7
+Chicago,Q2,2021,9
+Chicago,Q3,2021,11
+Chicago,Q4,2021,6
+Chicago,Q1,2022,13
+Chicago,Q2,2022,7
+Chicago,Q3,2022,13
+Chicago,Q4,2022,2
+Manhattan,Q1,2020,0
+Manhattan,Q2,2020,2
+Manhattan,Q3,2020,2
+Manhattan,Q4,2020,3
+Manhattan,Q1,2021,4
+Manhattan,Q2,2021,3
+Manhattan,Q3,2021,5
+Manhattan,Q4,2021,1
+Manhattan,Q1,2022,3
+Manhattan,Q2,2022,0
+Manhattan,Q3,2022,1
+Manhattan,Q4,2022,0
+Manhattan,Q1,2023,1
+Manhattan,Q2,2023,0
+Manhattan,Q3,2023,1
+Manhattan,Q4,2023,1
+Manhattan,Q1,2024,4
+Manhattan,Q2,2024,2
+Manhattan,Q3,2024,0
+Manhattan,Q4,2024,0
+Austin,Q1,2020,0
+Austin,Q2,2020,5
+Austin,Q3,2020,4
+Austin,Q4,2020,2
+Austin,Q1,2021,8
+Austin,Q2,2021,6
+Austin,Q3,2021,3
+Austin,Q4,2021,2
+Austin,Q1,2022,7
+Austin,Q2,2022,3
+Austin,Q3,2022,5
+Austin,Q4,2022,6
+Austin,Q1,2023,5
+Austin,Q2,2023,9
+Austin,Q3,2023,5
+Austin,Q4,2023,4
+Austin,Q1,2024,5
+Austin,Q2,2024,7
+Austin,Q3,2024,1
+Austin,Q4,2024,3
+Houston,Q1,2020,0
+Houston,Q2,2020,9
+Houston,Q3,2020,4
+Houston,Q4,2020,1
+Houston,Q1,2021,4
+Houston,Q2,2021,8
+Houston,Q3,2021,5
+Houston,Q4,2021,3
+Houston,Q1,2022,4
+Houston,Q2,2022,3
+Houston,Q3,2022,4
+Houston,Q4,2022,3
+Houston,Q1,2023,3
+Houston,Q2,2023,23
+Houston,Q3,2023,13
+Houston,Q4,2023,2
+Houston,Q1,2024,5
+Houston,Q2,2024,10
+Houston,Q3,2024,2
+Houston,Q4,2024,4
+Philadelphia,Q1,2020,0
+Philadelphia,Q2,2020,3
+Philadelphia,Q3,2020,6
+Philadelphia,Q4,2020,2
+Philadelphia,Q1,2021,8
+Philadelphia,Q2,2021,9
+Philadelphia,Q3,2021,12
+Philadelphia,Q4,2021,2
+Philadelphia,Q1,2022,8
+Philadelphia,Q2,2022,2
+Philadelphia,Q3,2022,2
+Philadelphia,Q4,2022,5
+Philadelphia,Q1,2023,0
+Philadelphia,Q2,2023,6
+Philadelphia,Q3,2023,5
+Philadelphia,Q4,2023,4
+Philadelphia,Q1,2024,11
+Philadelphia,Q2,2024,5
+Philadelphia,Q3,2024,7
+Philadelphia,Q4,2024,1
+Washington D.C.,Q1,2020,2
+Washington D.C.,Q2,2020,5
+Washington D.C.,Q3,2020,10
+Washington D.C.,Q4,2020,7
+Washington D.C.,Q1,2021,3
+Washington D.C.,Q2,2021,3
+Washington D.C.,Q3,2021,16
+Washington D.C.,Q4,2021,2
+Washington D.C.,Q1,2022,5
+Washington D.C.,Q2,2022,5
+Washington D.C.,Q3,2022,11
+Washington D.C.,Q4,2022,1
+Washington D.C.,Q1,2023,0
+Washington D.C.,Q2,2023,2
+Washington D.C.,Q3,2023,7
+Washington D.C.,Q4,2023,1
+Washington D.C.,Q1,2024,5
+Washington D.C.,Q2,2024,2
+Washington D.C.,Q3,2024,9
+Washington D.C.,Q4,2024,1
+Los Angeles,Q1,2020,1
+Los Angeles,Q2,2020,2
+Los Angeles,Q3,2020,8
+Los Angeles,Q4,2020,6
+Los Angeles,Q1,2021,10
+Los Angeles,Q2,2021,0
+Los Angeles,Q3,2021,1
+Los Angeles,Q4,2021,9
+Los Angeles,Q1,2022,10
+Los Angeles,Q2,2022,2
+Los Angeles,Q3,2022,2
+Los Angeles,Q4,2022,6
+Los Angeles,Q1,2023,17
+Los Angeles,Q2,2023,2
+Los Angeles,Q3,2023,2
+Los Angeles,Q4,2023,9
+Los Angeles,Q1,2024,22
+Los Angeles,Q2,2024,2
+Los Angeles,Q3,2024,1
+Los Angeles,Q4,2024,0
+San Francisco,Q1,2020,3
+San Francisco,Q2,2020,5
+San Francisco,Q3,2020,11
+San Francisco,Q4,2020,8
+San Francisco,Q1,2021,12
+San Francisco,Q2,2021,4
+San Francisco,Q3,2021,1
+San Francisco,Q4,2021,1
+San Francisco,Q1,2022,1
+San Francisco,Q2,2022,3
+San Francisco,Q3,2022,5
+San Francisco,Q4,2022,5
+San Francisco,Q1,2023,11
+San Francisco,Q2,2023,0
+San Francisco,Q3,2023,0
+San Francisco,Q4,2023,0
+San Francisco,Q1,2024,8
+San Francisco,Q2,2024,1
+San Francisco,Q3,2024,2
+San Francisco,Q4,2024,2
+South Bay/San Jose,Q1,2020,3
+South Bay/San Jose,Q2,2020,5
+South Bay/San Jose,Q3,2020,11
+South Bay/San Jose,Q4,2020,8
+South Bay/San Jose,Q1,2021,12
+South Bay/San Jose,Q2,2021,4
+South Bay/San Jose,Q3,2021,1
+South Bay/San Jose,Q4,2021,1
+South Bay/San Jose,Q1,2022,1
+South Bay/San Jose,Q2,2022,3
+South Bay/San Jose,Q3,2022,5
+South Bay/San Jose,Q4,2022,5
+South Bay/San Jose,Q1,2023,11
+South Bay/San Jose,Q2,2023,0
+South Bay/San Jose,Q3,2023,0
+South Bay/San Jose,Q4,2023,0
+South Bay/San Jose,Q1,2024,8
+South Bay/San Jose,Q2,2024,1
+South Bay/San Jose,Q3,2024,2
+South Bay/San Jose,Q4,2024,2
