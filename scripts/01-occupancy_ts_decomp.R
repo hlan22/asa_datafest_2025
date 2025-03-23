@@ -161,6 +161,8 @@ for(market in names(arma_models)){
 # save time series data
 # write.csv(out, "occupancy_plus_decomp.csv", row.names = FALSE)
 
+out <- read_csv("additional_data/clean/occupancy_plus_decomp.csv")
+
 # ------------- #
 # --- Plots --- #
 # ------------- #
@@ -205,7 +207,7 @@ deseasonalized_occupancy <- ggplot(out,
   geom_line(size = 1) +
   labs(
     title = "Occupancy Proportion Trend Component by Market",
-    subtitle = "After LOESS Decomposition",
+    # subtitle = "After LOESS Decomposition",
     x = "Time (Year-Quarter)",
     y = "Occupancy Proportion Trend",
     color = "Market") + 
