@@ -47,3 +47,5 @@ rsconnect/
 
 # don't push given data to repo
 data/
+
+*_files/
