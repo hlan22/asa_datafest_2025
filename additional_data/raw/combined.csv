@@ -1,201 +1,201 @@
-city,quarter,year,count_extreme_weather,hours_traffic,covid_cases
-Dallas,Q1,2020,2,34,549
-Dallas,Q2,2020,6,34,20188
-Dallas,Q3,2020,10,34,61424
-Dallas,Q4,2020,2,34,109383
-Dallas,Q1,2021,8,40,99354
-Dallas,Q2,2021,9,40,15519
-Dallas,Q3,2021,6,40,81053
-Dallas,Q4,2021,3,40,50276
-Dallas,Q1,2022,10,56,131278
-Dallas,Q2,2022,8,56,26209
-Dallas,Q3,2022,11,56,63982
-Dallas,Q4,2022,2,56,8805
-Dallas,Q1,2023,5,38,25069
-Dallas,Q2,2023,12,38,3492
-Dallas,Q3,2023,12,38,0
-Dallas,Q4,2023,5,38,0
-Dallas,Q1,2024,1,40,0
-Dallas,Q2,2024,17,40,0
-Dallas,Q3,2024,10,40,0
-Dallas,Q4,2024,5,40,0
-Chicago,Q1,2020,2,86,4496
-Chicago,Q2,2020,13,86,86040
-Chicago,Q3,2020,10,86,54926
-Chicago,Q4,2020,4,86,248190
-Chicago,Q1,2021,7,104,104233
-Chicago,Q2,2021,9,104,59116
-Chicago,Q3,2021,11,104,62575
-Chicago,Q4,2021,6,104,215780
-Chicago,Q1,2022,13,155,292409
-Chicago,Q2,2022,7,155,111711
-Chicago,Q3,2022,13,155,0
-Chicago,Q4,2022,2,155,30109
-Chicago,Q1,2023,0,100,0
-Chicago,Q2,2023,0,100,0
-Chicago,Q3,2023,0,100,0
-Chicago,Q4,2023,0,100,0
-Chicago,Q1,2024,0,102,0
-Chicago,Q2,2024,0,102,0
-Chicago,Q3,2024,0,102,0
-Chicago,Q4,2024,0,102,0
-Manhattan,Q1,2020,0,100,6539
-Manhattan,Q2,2020,2,100,21908
-Manhattan,Q3,2020,2,100,5114
-Manhattan,Q4,2020,3,100,29001
-Manhattan,Q1,2021,4,102,60801
-Manhattan,Q2,2021,3,102,15379
-Manhattan,Q3,2021,5,102,25043
-Manhattan,Q4,2021,1,102,109087
-Manhattan,Q1,2022,3,117,139851
-Manhattan,Q2,2022,0,117,69667
-Manhattan,Q3,2022,1,117,49733
-Manhattan,Q4,2022,0,117,40128
-Manhattan,Q1,2023,1,100,17583
-Manhattan,Q2,2023,0,100,4484
-Manhattan,Q3,2023,1,100,1115
-Manhattan,Q4,2023,1,100,0
-Manhattan,Q1,2024,4,102,0
-Manhattan,Q2,2024,2,102,0
-Manhattan,Q3,2024,0,102,0
-Manhattan,Q4,2024,0,102,0
-Austin,Q1,2020,0,30,206
-Austin,Q2,2020,5,30,8763
-Austin,Q3,2020,4,30,20452
-Austin,Q4,2020,2,30,20773
-Austin,Q1,2021,8,35,28891
-Austin,Q2,2021,6,35,5621
-Austin,Q3,2021,3,35,30402
-Austin,Q4,2021,2,35,19011
-Austin,Q1,2022,7,53,87175
-Austin,Q2,2022,3,53,23410
-Austin,Q3,2022,5,53,30827
-Austin,Q4,2022,6,53,5325
-Austin,Q1,2023,5,38,40748
-Austin,Q2,2023,9,38,2083
-Austin,Q3,2023,5,38,0
-Austin,Q4,2023,4,38,0
-Austin,Q1,2024,5,39,0
-Austin,Q2,2024,7,39,0
-Austin,Q3,2024,1,39,0
-Austin,Q4,2024,3,39,0
-Houston,Q1,2020,0,35,563
-Houston,Q2,2020,9,35,30166
-Houston,Q3,2020,4,35,111586
-Houston,Q4,2020,1,35,94358
-Houston,Q1,2021,4,40,139481
-Houston,Q2,2021,8,40,26773
-Houston,Q3,2021,5,40,151409
-Houston,Q4,2021,3,40,97711
-Houston,Q1,2022,4,74,363803
-Houston,Q2,2022,3,74,79651
-Houston,Q3,2022,4,74,119169
-Houston,Q4,2022,3,74,12170
-Houston,Q1,2023,3,60,87397
-Houston,Q2,2023,23,60,6130
-Houston,Q3,2023,13,60,0
-Houston,Q4,2023,2,60,0
-Houston,Q1,2024,5,66,0
-Houston,Q2,2024,10,66,0
-Houston,Q3,2024,2,66,0
-Houston,Q4,2024,4,66,0
-Philadelphia,Q1,2020,0,94,1197
-Philadelphia,Q2,2020,3,94,20403
-Philadelphia,Q3,2020,6,94,10536
-Philadelphia,Q4,2020,2,94,56014
-Philadelphia,Q1,2021,8,90,36697
-Philadelphia,Q2,2021,9,90,25190
-Philadelphia,Q3,2021,12,90,24441
-Philadelphia,Q4,2021,2,90,50553
-Philadelphia,Q1,2022,8,114,82917
-Philadelphia,Q2,2022,2,114,27695
-Philadelphia,Q3,2022,2,114,28253
-Philadelphia,Q4,2022,5,114,16652
-Philadelphia,Q1,2023,0,80,15566
-Philadelphia,Q2,2023,6,80,1648
-Philadelphia,Q3,2023,5,80,0
-Philadelphia,Q4,2023,4,80,0
-Philadelphia,Q1,2024,11,77,0
-Philadelphia,Q2,2024,5,77,0
-Philadelphia,Q3,2024,7,77,0
-Philadelphia,Q4,2024,1,77,0
-Washington D.C.,Q1,2020,2,29,586
-Washington D.C.,Q2,2020,5,29,9741
-Washington D.C.,Q3,2020,10,29,4999
-Washington D.C.,Q4,2020,7,29,13657
-Washington D.C.,Q1,2021,3,30,15530
-Washington D.C.,Q2,2021,3,30,4822
-Washington D.C.,Q3,2021,16,30,11818
-Washington D.C.,Q4,2021,2,30,33133
-Washington D.C.,Q1,2022,5,83,40337
-Washington D.C.,Q2,2022,5,83,22418
-Washington D.C.,Q3,2022,11,83,11535
-Washington D.C.,Q4,2022,1,83,573
-Washington D.C.,Q1,2023,0,60,0
-Washington D.C.,Q2,2023,2,60,0
-Washington D.C.,Q3,2023,7,60,0
-Washington D.C.,Q4,2023,1,60,0
-Washington D.C.,Q1,2024,5,62,0
-Washington D.C.,Q2,2024,2,62,0
-Washington D.C.,Q3,2024,9,62,0
-Washington D.C.,Q4,2024,1,62,0
-Los Angeles,Q1,2020,1,45,6386
-Los Angeles,Q2,2020,2,45,111837
-Los Angeles,Q3,2020,8,45,154579
-Los Angeles,Q4,2020,6,45,555526
-Los Angeles,Q1,2021,10,50,356633
-Los Angeles,Q2,2021,0,50,24562
-Los Angeles,Q3,2021,1,50,185318
-Los Angeles,Q4,2021,9,50,280239
-Los Angeles,Q1,2022,10,95,1028219
-Los Angeles,Q2,2022,2,95,283718
-Los Angeles,Q3,2022,2,95,284384
-Los Angeles,Q4,2022,6,95,148718
-Los Angeles,Q1,2023,17,80,84233
-Los Angeles,Q2,2023,2,80,25084
-Los Angeles,Q3,2023,2,80,4652
-Los Angeles,Q4,2023,9,80,0
-Los Angeles,Q1,2024,22,88,0
-Los Angeles,Q2,2024,2,88,0
-Los Angeles,Q3,2024,1,88,0
-Los Angeles,Q4,2024,0,88,0
-San Francisco,Q1,2020,3,47,704
-San Francisco,Q2,2020,5,47,3336
-San Francisco,Q3,2020,11,47,7422
-San Francisco,Q4,2020,8,47,13244
-San Francisco,Q1,2021,12,50,10574
-San Francisco,Q2,2021,4,50,1894
-San Francisco,Q3,2021,1,50,13212
-San Francisco,Q4,2021,1,50,18280
-San Francisco,Q1,2022,1,97,56386
-San Francisco,Q2,2022,3,97,34979
-San Francisco,Q3,2022,5,97,18447
-San Francisco,Q4,2022,5,97,11526
-San Francisco,Q1,2023,11,70,8044
-San Francisco,Q2,2023,0,70,3263
-San Francisco,Q3,2023,0,70,517
-San Francisco,Q4,2023,0,70,0
-San Francisco,Q1,2024,8,50,0
-San Francisco,Q2,2024,1,50,0
-San Francisco,Q3,2024,2,50,0
-San Francisco,Q4,2024,2,50,0
-South Bay/San Jose,Q1,2020,3,47,1364
-South Bay/San Jose,Q2,2020,5,47,4207
-South Bay/San Jose,Q3,2020,11,47,16611
-South Bay/San Jose,Q4,2020,8,47,52951
-South Bay/San Jose,Q1,2021,12,50,38672
-South Bay/San Jose,Q2,2021,4,50,5270
-South Bay/San Jose,Q3,2021,1,50,22143
-South Bay/San Jose,Q4,2021,1,50,31096
-South Bay/San Jose,Q1,2022,1,97,140220
-South Bay/San Jose,Q2,2022,3,97,71269
-South Bay/San Jose,Q3,2022,5,97,47078
-South Bay/San Jose,Q4,2022,5,97,30636
-South Bay/San Jose,Q1,2023,11,70,17983
-South Bay/San Jose,Q2,2023,0,70,7439
-South Bay/San Jose,Q3,2023,0,70,1396
-South Bay/San Jose,Q4,2023,0,70,0
-South Bay/San Jose,Q1,2024,8,50,0
-South Bay/San Jose,Q2,2024,1,50,0
-South Bay/San Jose,Q3,2024,2,50,0
-South Bay/San Jose,Q4,2024,2,50,0
+market,quarter,year,extreme_weather_num,hours_traffic,covid_cases,state_politics
+Dallas,1,2020,2,34,549,republican
+Dallas,2,2020,6,34,20188,republican
+Dallas,3,2020,10,34,61424,republican
+Dallas,4,2020,2,34,109383,republican
+Dallas,1,2021,8,40,99354,republican
+Dallas,2,2021,9,40,15519,republican
+Dallas,3,2021,6,40,81053,republican
+Dallas,4,2021,3,40,50276,republican
+Dallas,1,2022,10,56,131278,republican
+Dallas,2,2022,8,56,26209,republican
+Dallas,3,2022,11,56,63982,republican
+Dallas,4,2022,2,56,8805,republican
+Dallas,1,2023,5,38,25069,republican
+Dallas,2,2023,12,38,3492,republican
+Dallas,3,2023,12,38,0,republican
+Dallas,4,2023,5,38,0,republican
+Dallas,1,2024,1,40,0,republican
+Dallas,2,2024,17,40,0,republican
+Dallas,3,2024,10,40,0,republican
+Dallas,4,2024,5,40,0,republican
+Chicago,1,2020,2,86,4496,democrat
+Chicago,2,2020,13,86,86040,democrat
+Chicago,3,2020,10,86,54926,democrat
+Chicago,4,2020,4,86,248190,democrat
+Chicago,1,2021,7,104,104233,democrat
+Chicago,2,2021,9,104,59116,democrat
+Chicago,3,2021,11,104,62575,democrat
+Chicago,4,2021,6,104,215780,democrat
+Chicago,1,2022,13,155,292409,democrat
+Chicago,2,2022,7,155,111711,democrat
+Chicago,3,2022,13,155,0,democrat
+Chicago,4,2022,2,155,30109,democrat
+Chicago,1,2023,0,100,0,democrat
+Chicago,2,2023,0,100,0,democrat
+Chicago,3,2023,0,100,0,democrat
+Chicago,4,2023,0,100,0,democrat
+Chicago,1,2024,0,102,0,democrat
+Chicago,2,2024,0,102,0,democrat
+Chicago,3,2024,0,102,0,democrat
+Chicago,4,2024,0,102,0,democrat
+Manhattan,1,2020,0,100,6539,democrat
+Manhattan,2,2020,2,100,21908,democrat
+Manhattan,3,2020,2,100,5114,democrat
+Manhattan,4,2020,3,100,29001,democrat
+Manhattan,1,2021,4,102,60801,democrat
+Manhattan,2,2021,3,102,15379,democrat
+Manhattan,3,2021,5,102,25043,democrat
+Manhattan,4,2021,1,102,109087,democrat
+Manhattan,1,2022,3,117,139851,democrat
+Manhattan,2,2022,0,117,69667,democrat
+Manhattan,3,2022,1,117,49733,democrat
+Manhattan,4,2022,0,117,40128,democrat
+Manhattan,1,2023,1,100,17583,democrat
+Manhattan,2,2023,0,100,4484,democrat
+Manhattan,3,2023,1,100,1115,democrat
+Manhattan,4,2023,1,100,0,democrat
+Manhattan,1,2024,4,102,0,democrat
+Manhattan,2,2024,2,102,0,democrat
+Manhattan,3,2024,0,102,0,democrat
+Manhattan,4,2024,0,102,0,democrat
+Austin,1,2020,0,30,206,republican
+Austin,2,2020,5,30,8763,republican
+Austin,3,2020,4,30,20452,republican
+Austin,4,2020,2,30,20773,republican
+Austin,1,2021,8,35,28891,republican
+Austin,2,2021,6,35,5621,republican
+Austin,3,2021,3,35,30402,republican
+Austin,4,2021,2,35,19011,republican
+Austin,1,2022,7,53,87175,republican
+Austin,2,2022,3,53,23410,republican
+Austin,3,2022,5,53,30827,republican
+Austin,4,2022,6,53,5325,republican
+Austin,1,2023,5,38,40748,republican
+Austin,2,2023,9,38,2083,republican
+Austin,3,2023,5,38,0,republican
+Austin,4,2023,4,38,0,republican
+Austin,1,2024,5,39,0,republican
+Austin,2,2024,7,39,0,republican
+Austin,3,2024,1,39,0,republican
+Austin,4,2024,3,39,0,republican
+Houston,1,2020,0,35,563,republican
+Houston,2,2020,9,35,30166,republican
+Houston,3,2020,4,35,111586,republican
+Houston,4,2020,1,35,94358,republican
+Houston,1,2021,4,40,139481,republican
+Houston,2,2021,8,40,26773,republican
+Houston,3,2021,5,40,151409,republican
+Houston,4,2021,3,40,97711,republican
+Houston,1,2022,4,74,363803,republican
+Houston,2,2022,3,74,79651,republican
+Houston,3,2022,4,74,119169,republican
+Houston,4,2022,3,74,12170,republican
+Houston,1,2023,3,60,87397,republican
+Houston,2,2023,23,60,6130,republican
+Houston,3,2023,13,60,0,republican
+Houston,4,2023,2,60,0,republican
+Houston,1,2024,5,66,0,republican
+Houston,2,2024,10,66,0,republican
+Houston,3,2024,2,66,0,republican
+Houston,4,2024,4,66,0,republican
+Philadelphia,1,2020,0,94,1197,republican
+Philadelphia,2,2020,3,94,20403,republican
+Philadelphia,3,2020,6,94,10536,republican
+Philadelphia,4,2020,2,94,56014,republican
+Philadelphia,1,2021,8,90,36697,republican
+Philadelphia,2,2021,9,90,25190,republican
+Philadelphia,3,2021,12,90,24441,republican
+Philadelphia,4,2021,2,90,50553,republican
+Philadelphia,1,2022,8,114,82917,republican
+Philadelphia,2,2022,2,114,27695,republican
+Philadelphia,3,2022,2,114,28253,republican
+Philadelphia,4,2022,5,114,16652,republican
+Philadelphia,1,2023,0,80,15566,republican
+Philadelphia,2,2023,6,80,1648,republican
+Philadelphia,3,2023,5,80,0,republican
+Philadelphia,4,2023,4,80,0,republican
+Philadelphia,1,2024,11,77,0,republican
+Philadelphia,2,2024,5,77,0,republican
+Philadelphia,3,2024,7,77,0,republican
+Philadelphia,4,2024,1,77,0,republican
+Washington D.C.,1,2020,2,29,586,democrat
+Washington D.C.,2,2020,5,29,9741,democrat
+Washington D.C.,3,2020,10,29,4999,democrat
+Washington D.C.,4,2020,7,29,13657,democrat
+Washington D.C.,1,2021,3,30,15530,democrat
+Washington D.C.,2,2021,3,30,4822,democrat
+Washington D.C.,3,2021,16,30,11818,democrat
+Washington D.C.,4,2021,2,30,33133,democrat
+Washington D.C.,1,2022,5,83,40337,democrat
+Washington D.C.,2,2022,5,83,22418,democrat
+Washington D.C.,3,2022,11,83,11535,democrat
+Washington D.C.,4,2022,1,83,573,democrat
+Washington D.C.,1,2023,0,60,0,democrat
+Washington D.C.,2,2023,2,60,0,democrat
+Washington D.C.,3,2023,7,60,0,democrat
+Washington D.C.,4,2023,1,60,0,democrat
+Washington D.C.,1,2024,5,62,0,democrat
+Washington D.C.,2,2024,2,62,0,democrat
+Washington D.C.,3,2024,9,62,0,democrat
+Washington D.C.,4,2024,1,62,0,democrat
+Los Angeles,1,2020,1,45,6386,democrat
+Los Angeles,2,2020,2,45,111837,democrat
+Los Angeles,3,2020,8,45,154579,democrat
+Los Angeles,4,2020,6,45,555526,democrat
+Los Angeles,1,2021,10,50,356633,democrat
+Los Angeles,2,2021,0,50,24562,democrat
+Los Angeles,3,2021,1,50,185318,democrat
+Los Angeles,4,2021,9,50,280239,democrat
+Los Angeles,1,2022,10,95,1028219,democrat
+Los Angeles,2,2022,2,95,283718,democrat
+Los Angeles,3,2022,2,95,284384,democrat
+Los Angeles,4,2022,6,95,148718,democrat
+Los Angeles,1,2023,17,80,84233,democrat
+Los Angeles,2,2023,2,80,25084,democrat
+Los Angeles,3,2023,2,80,4652,democrat
+Los Angeles,4,2023,9,80,0,democrat
+Los Angeles,1,2024,22,88,0,democrat
+Los Angeles,2,2024,2,88,0,democrat
+Los Angeles,3,2024,1,88,0,democrat
+Los Angeles,4,2024,0,88,0,democrat
+San Francisco,1,2020,3,47,704,democrat
+San Francisco,2,2020,5,47,3336,democrat
+San Francisco,3,2020,11,47,7422,democrat
+San Francisco,4,2020,8,47,13244,democrat
+San Francisco,1,2021,12,50,10574,democrat
+San Francisco,2,2021,4,50,1894,democrat
+San Francisco,3,2021,1,50,13212,democrat
+San Francisco,4,2021,1,50,18280,democrat
+San Francisco,1,2022,1,97,56386,democrat
+San Francisco,2,2022,3,97,34979,democrat
+San Francisco,3,2022,5,97,18447,democrat
+San Francisco,4,2022,5,97,11526,democrat
+San Francisco,1,2023,11,70,8044,democrat
+San Francisco,2,2023,0,70,3263,democrat
+San Francisco,3,2023,0,70,517,democrat
+San Francisco,4,2023,0,70,0,democrat
+San Francisco,1,2024,8,50,0,democrat
+San Francisco,2,2024,1,50,0,democrat
+San Francisco,3,2024,2,50,0,democrat
+San Francisco,4,2024,2,50,0,democrat
+South Bay/San Jose,1,2020,3,47,1364,democrat
+South Bay/San Jose,2,2020,5,47,4207,democrat
+South Bay/San Jose,3,2020,11,47,16611,democrat
+South Bay/San Jose,4,2020,8,47,52951,democrat
+South Bay/San Jose,1,2021,12,50,38672,democrat
+South Bay/San Jose,2,2021,4,50,5270,democrat
+South Bay/San Jose,3,2021,1,50,22143,democrat
+South Bay/San Jose,4,2021,1,50,31096,democrat
+South Bay/San Jose,1,2022,1,97,140220,democrat
+South Bay/San Jose,2,2022,3,97,71269,democrat
+South Bay/San Jose,3,2022,5,97,47078,democrat
+South Bay/San Jose,4,2022,5,97,30636,democrat
+South Bay/San Jose,1,2023,11,70,17983,democrat
+South Bay/San Jose,2,2023,0,70,7439,democrat
+South Bay/San Jose,3,2023,0,70,1396,democrat
+South Bay/San Jose,4,2023,0,70,0,democrat
+South Bay/San Jose,1,2024,8,50,0,democrat
+South Bay/San Jose,2,2024,1,50,0,democrat
+South Bay/San Jose,3,2024,2,50,0,democrat
+South Bay/San Jose,4,2024,2,50,0,democrat
