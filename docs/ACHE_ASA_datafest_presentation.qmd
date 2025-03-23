@@ -3,6 +3,7 @@ title: "Analyzing Trends in Office Attendance \nIn Major US Markets"
 author: "Team ACHE: \nAnh, Caden, and Heidi!"
 format: revealjs
 editor: visual
+embed-resources: true
 ---
 
 ## The Issue
@@ -13,15 +14,21 @@ editor: visual
 
 - Using data from Kastle, we talk about the occupancy rate
 
+## Major Markets
+
+![Major Market Cities in the U.S.](../outputs/city_map.png){#fig-city-map fig-align="center" width="80%"}
+
 ## Occupancy Rate
 
-(show plot of seasonal trend with occupancy)
+![Time Series of Occupancy Rate](../outputs/seasonal_occupancy.png){#fig-occupancy fig-align="center"}
 
 comment on that it is seasonal time series data, remove seasonal trend
 
 ## Occupancy Rate: Deseasonalized
 
 (show plot of occupancy without season changes)
+
+![Deseasonalized Occupancy Trends](../outputs/deseasonalized_occupancy.png){#fig-deseasonalized fig-align="center"}
 
 Talk about how we want to show factors that will change this over time
 
