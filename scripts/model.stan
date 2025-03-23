@@ -14,7 +14,6 @@ data {
   real<lower=0> x3[N];          // Traffic congestion
   real x4[N];                   // Standardized Covid cases
   int<lower=0, upper=1> x5[N];   // State political affiliation
-  // vector[N] x6;                   // work from home rate
 }
 
 // The parameters accepted by the model
@@ -44,8 +43,7 @@ model {
          beta[2] * x2[t] +
          beta[3] * x3[t] +
          beta[4] * x4[t] +
-         beta[5] * x5[t]; // +
-    //     beta[6] * x6[t];
+         beta[5] * x5[t]; 
     m[t] ~ normal(mu, sigma); 
   }
 }

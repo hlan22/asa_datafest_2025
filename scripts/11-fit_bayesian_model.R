@@ -19,6 +19,7 @@ init_fun <- function() list(
 )
 # go through all fits for all markets
 all_fits <- list()
+unique(df$market)
 for (mkt in unique(df$market)){
   # get this market
   m_df <- df[df$market == mkt, ]
