@@ -1,9 +1,10 @@
-# map the major markets and add info about occupancy rates
+# map the major markets and add info about political rates
 # install.packages(c("usmap", "ggrepel"))
 # Load required packages
 library(ggplot2)
 library(usmap)
 library(ggrepel)
+library(dplyr)
 
 # Get US map data
 us_map <- map_data("state")
@@ -47,22 +48,6 @@ plain_map_with_cities <- ggplot() +
   )
 plain_map_with_cities
 
-
-
-
-# Load required packages (already assumed loaded: ggplot2, maps, ggrepel, dplyr)
-library(ggplot2)
-library(maps)
-library(ggrepel)
-library(dplyr)
-
-# Ensure consistent styling with your previous preferences
-theme_set(theme_bw())
-scale_colour_discrete <- function(...) scale_colour_brewer(palette = "Paired", ...)
-scale_fill_discrete <- function(...) scale_fill_brewer(palette = "Paired", ...)
-
-# Assuming us_map and major_cities are already defined as before
-# If not, redefine them for clarity
 us_map <- map_data("state")
 
 # Using your target_counties as major_cities
@@ -125,3 +110,95 @@ enhanced_map_with_cities
 # ggsave(filename = "outputs/city_map.png",
 #        plot = enhanced_map_with_cities)
 
+
+# Add political affiliation to us_map
+state_affiliation_with_swing <- tibble(
+  region = tolower(state.name),
+  affiliation = case_when(
+    region %in% tolower(c("Alabama", "Alaska", "Arkansas", "Florida", "Idaho", "Indiana", "Iowa", 
+                          "Kansas", "Kentucky", "Louisiana", "Mississippi", "Missouri", "Montana", 
+                          "Nebraska", "North Dakota", "Ohio", "Oklahoma", "South Carolina", 
+                          "South Dakota", "Tennessee", "Texas", "Utah", "West Virginia", "Wyoming")) ~ "Republican",
+    region %in% tolower(c("California", "Colorado", "Connecticut", "Delaware", "Hawaii", "Illinois", 
+                          "Maryland", "Massachusetts", "Minnesota", "New Hampshire", "New Jersey", 
+                          "New Mexico", "New York", "Oregon", "Rhode Island", "Vermont", "Virginia", 
+                          "Washington")) ~ "Democratic",
+    region %in% tolower(c("Arizona", "Georgia", "Michigan", "Nevada", "Pennsylvania", "Wisconsin")) ~ "Swing",
+    TRUE ~ "Other"  # DC handled separately if needed
+  )
+)
+
+state_affiliation <- tibble(
+  region = tolower(state.name),
+  affiliation = case_when(
+    region %in% tolower(c("Alabama", "Alaska", "Arkansas", "Florida", "Idaho", "Indiana", "Iowa", 
+                          "Kansas", "Kentucky", "Louisiana", "Mississippi", "Missouri", "Montana", 
+                          "Nebraska", "North Carolina", "North Dakota", "Ohio", "Oklahoma", 
+                          "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", 
+                          "West Virginia", "Wyoming")) ~ "Republican",
+    region %in% tolower(c("Arizona", "California", "Colorado", "Connecticut", "Delaware", "Georgia", 
+                          "Hawaii", "Illinois", "Maine", "Maryland", "Massachusetts", "Michigan", 
+                          "Minnesota", "Nevada", "New Hampshire", "New Jersey", "New Mexico", 
+                          "New York", "Oregon", "Pennsylvania", "Rhode Island", "Vermont", 
+                          "Virginia", "Washington", "Wisconsin")) ~ "Democratic",
+    TRUE ~ NA_character_  # Shouldn’t trigger since all 50 states are covered
+  )
+) %>%
+  # Add District of Columbia
+  add_row(region = "district of columbia", affiliation = "Democratic")
+
+
+
+# Merge affiliation with us_map
+us_map <- us_map %>% 
+  left_join(state_affiliation, by = "region")
+
+# Enhanced map with political affiliation
+political_map_with_cities <- ggplot() +
+  # State polygons with political fill
+  geom_polygon(data = us_map, 
+               aes(x = long, y = lat, group = group, fill = affiliation), 
+               color = "black", linewidth = 0.3, alpha = 0.9) +
+  # City points
+  geom_point(data = major_cities, 
+             aes(x = lon, y = lat), 
+             color = "black", size = 4, alpha = 0.9, shape = 19) +
+  # City labels
+  geom_label_repel(data = major_cities, 
+                   aes(x = lon, y = lat, label = city), 
+                   size = 3, color = "black", fill = "white", alpha = 0.7, 
+                   box.padding = 0.8, label.padding = 0.3, max.overlaps = Inf, seed = 42) +
+  # Albers projection
+  coord_map("albers", lat0 = 30, lat1 = 40) +
+  # Custom fill colors for political affiliation
+  scale_fill_manual(values = c("Republican" = "red", #D53E4F", 
+                               "Democratic" = "dodgerblue", 
+                               "Swing" = "#A9A9A9"), #C594FF"),
+                    name = "State Political Affiliation (2020-2024)") +
+  # Titles and labels
+  labs(
+    title = "Major Market Cities and Political Affiliation in the U.S.",
+    # subtitle = "States Colored by Presidential Election Outcomes"
+  ) +
+  # Theme adjustments
+  theme(
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_rect(fill = "white"),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, hjust = 0.5, margin = margin(b = 10)),
+    legend.position = "bottom",
+    legend.title = element_text(size = 12, face = "bold"),
+    legend.text = element_text(size = 10)
+  )
+
+political_map_with_cities
+
+ggsave(filename = "outputs/political_map.png",
+       plot = political_map_with_cities,
+       width = 8,
+       height = 6
+       )

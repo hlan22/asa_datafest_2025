@@ -3,8 +3,11 @@ library(ggplot2)
 library(tidyverse)
 library(scales)
 
-# set base theme for plots
+# Set default theme and color palette as per our preferences
 theme_set(theme_bw())
+scale_colour_discrete <- function(...) scale_colour_brewer(palette = "Paired", ...)
+scale_fill_discrete <- function(...) scale_fill_brewer(palette = "Paired", ...)
+
 
 # read data
 covid4 <- read.csv("additional_data/covid_cases.csv")
@@ -34,14 +37,14 @@ new_cases_per_city <- covid4 %>%
        x = "Year and Quarter",
        y = "New Cases (Sqrt Scale)",
        color = "City") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   scale_y_sqrt(labels = comma) + # from scales package, gives more interpretable numbers
   scale_color_brewer(palette = "Paired")
 new_cases_per_city
 
-ggsave(filename = "outputs/covid_cases_per_city_quarterly.png",
-       plot = new_cases_per_city)
-?ggsave
+# ggsave(filename = "outputs/covid_cases_per_city_quarterly.png",
+#        plot = new_cases_per_city)
+
 # bad bar chart
 ggplot(covid4, aes(x = year_quarter, y = total_cases, fill = city)) +
   geom_bar(stat = "identity", position = "stack") +
