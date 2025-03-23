@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Trends in Office Attendance \nIn Major US Markets"
-author: "Team ACHE: \nAnh, Caden, Heidi, and Ethan!"
+author: "Team ACHE: \nAnh, Caden, and Heidi!"
 format: revealjs
 editor: visual
 ---
@@ -25,9 +25,7 @@ comment on that it is seasonal time series data, remove seasonal trend
 
 Talk about how we want to show factors that will change this over time
 
-## Factors that may Affect Attendance
-
-The factors we believe are important (per market):
+## Factors That May Affect Office Attendance
 
 1. Extreme Weather Events
 2. Unemployment Rate
@@ -38,21 +36,43 @@ The factors we believe are important (per market):
 
 ## Example Factor: Work-from-home Rate
 
+- data from Kastle
+
 - guide through example of people working in person again increasing (?)
 
 - this suggests that since people returning from covid/2020 are now less likely to work in person, therefore
 
 
-## Research Question
+## Our Research Question 
 
-Our main research question
+<br>
+
+<br>
+
+<div style="text-align: center; font-size: 1.5em; font-weight: bold;">
+What variables explain the increasing trend of post-COVID office occupancy across major markets?
+</div>
 
 ## Analysis
 
+
+
 ## Other
+
+
+extra yap: 
+What trends explain the trend what is making people return to office, and is it dependent on city
+
+
 
 ## Credit
 
-* For help making the [Quarto Presentation](https://quarto.org/docs/presentations/)
+* Help making the [Quarto Presentation](https://quarto.org/docs/presentations/)
 
 * Data Sources
+  * [Covid Cases Data](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/)
+  * [Extreme Weather Event](https://www.ncdc.noaa.gov/stormevents/)
+  * [Traffic Congestion](https://grok.com/share/bGVnYWN5_4367bb2c-71a2-4443-92f3-cf90b150b7cf)
+  * For Occupancy Rate and Unemployment Rate data, please see resources given to us
+
+## Thanks! {.center}
