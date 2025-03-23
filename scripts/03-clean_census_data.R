@@ -1,3 +1,4 @@
+# census data
 library(tidycensus)
 library(tidyverse)
 
@@ -69,6 +70,7 @@ county_census_1yr <- map_dfr(2021:2023, function(yr) {
     )
 })
 
+colnames(county_census_1yr)
 
 
 market_labels <- c("Austin",
@@ -97,12 +99,14 @@ county_order <- c("Travis County, Texas",
 
 county_census_1yr$market <- market_labels[match(county_census_1yr$NAME, county_order)]
 # small transform for percentages
-county_census <- county_census %>%
+county_census <- county_census_1yr %>%
   mutate(
     pct_public_transit = public_transitE / total_popE,
     pct_worked_from_home = worked_from_homeE / total_popE,
     pct_drove_alone = drove_aloneE / total_popE
   )
+
+
 # extract wfh percentages
 wfh_by_year <- county_census_1yr %>%
   select(market, year, pct_worked_from_home)%>%
@@ -127,10 +131,16 @@ wfh <- wfh_by_year %>%
   mutate(quarter = quarter,
          yearquarter = paste0(year, "Q", 1))
 # test out a plot
-setwd("C://Users//thetr//OneDrive//Desktop//Misc//Personal Projects//asa_datafest_2025//additional_data//raw//")
-write.csv(wfh, "work_from_home.csv", row.names = FALSE)
 
-ggplot(wfh,
+
+# saving data
+#setwd("C://Users//thetr//OneDrive//Desktop//Misc//Personal Projects//asa_datafest_2025//additional_data//raw//")
+#write.csv(wfh, "work_from_home.csv", row.names = FALSE)
+
+wfh <- read_csv("additional_data/raw/work_from_home.csv")
+colnames(wfh)
+
+working_from_home <- ggplot(wfh,
        aes(
          x = paste0(year,quarter),
          y = pct_worked_from_home,
@@ -139,9 +149,18 @@ ggplot(wfh,
        )) +
   geom_line(size = 1) +
   labs(
-    title = "Proportion of Individuals Working from Home",
-    subtitle = "By Year, US Census Data",
-    x = "Year",
-    y = "Value",
-    color = "Market"
-  ) + scale_color_brewer(palette = "Paired") + theme_bw()
+    title = "Individuals Working from Home Over Time",
+    # subtitle = "By Year, US Census Data",
+    x = "Time (Year-Quarter)",
+    y = "Proportion Working From Home",
+    color = "Market") + 
+  theme_bw() +
+  scale_color_brewer(palette = "Paired") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+working_from_home
+
+# save plot
+ggsave(filename = "outputs/working_from_home.png",
+       plot = working_from_home,
+       width = 7,
+       height = 6)
