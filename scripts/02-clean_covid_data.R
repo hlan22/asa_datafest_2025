@@ -81,4 +81,4 @@ head(covid4)
 
 # write.csv(covid4, "additional_data/covid_cases.csv")
 
-# edit file to correct chicago values
+# edited csv file to correct chicago values
