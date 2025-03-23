@@ -243,7 +243,7 @@ posterior_pred <- ggplot() +
   geom_line(data = y_obs_df, aes(x = t, y = y_obs, group = 1), color = "#353535", size = 1) +
   scale_color_manual(
     name = "Legend",
-    values = c("Posterior Draw" = "#3c6e71", "Observed" = "#353535")
+    values = c("Posterior Draw" = "grey30", "Observed" = "grey20")
   ) +
   guides(color = guide_legend(override.aes = list(alpha = 1, size = 2))) +
   labs(
