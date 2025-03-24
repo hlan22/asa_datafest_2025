@@ -153,7 +153,7 @@ $$
 
 ## Model Verification
 
-![Posterior Prediction](../outputs/posterior_check_chicago.png){#fig-posterior fig-align="center"}
+![Posterior Predictive Check](../outputs/posterior_check_chicago.png){#fig-posterior fig-align="center"}
 
 ## Conclusions
 
