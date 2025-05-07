@@ -46,6 +46,9 @@ po/*~
 rsconnect/
 
 # don't push given data to repo
-data/
+data/*
 
 *_files/
+
+.DS_Store
+*/.DS_Store

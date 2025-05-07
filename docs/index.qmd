@@ -1,6 +1,0 @@
----
-title: "index"
-format: html
----
-
-Summary document for our project!
